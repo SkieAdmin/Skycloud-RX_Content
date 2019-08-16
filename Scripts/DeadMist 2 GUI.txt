@@ -1,0 +1,112 @@
+local a=Instance.new("ScreenGui")
+local b=Instance.new("Frame")
+local c=Instance.new("Frame")
+local d=Instance.new("ImageButton")
+local e=Instance.new("Frame")
+local f=Instance.new("Frame")
+local g=Instance.new("TextLabel")
+local h=Instance.new("Frame")
+local i=Instance.new("Frame")
+local j=Instance.new("Frame")
+local k=Instance.new("ScrollingFrame")
+local l=Instance.new("ImageLabel")
+local m=Instance.new("TextLabel")
+local n=Instance.new("TextLabel")
+local o=Instance.new("TextLabel")
+local p=Instance.new("TextLabel")
+local q=Instance.new("TextLabel")
+local r=Instance.new("TextLabel")
+local s=Instance.new("TextLabel")
+local t=Instance.new("TextLabel")
+local u=Instance.new("TextBox")
+local v=Instance.new("Frame")
+local w=Instance.new("TextButton")
+local x=Instance.new("TextLabel")
+local y=Instance.new("Frame")
+local z=Instance.new("Frame")
+local A=game.Players.LocalPlayer;
+local B=A:GetMouse()
+local C=false;Open=false;a.Parent=game.CoreGui;
+a.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;b.Name="Main"b.Parent=a;b.BackgroundColor3=Color3.new(0.16,0.16,0.16)b.BackgroundTransparency=1;
+b.BorderColor3=Color3.new(0,0,0)b.BorderSizePixel=0;
+b.Position=UDim2.new(0.249633938,0,0.123953104,0)b.Size=UDim2.new(0.5,0,0.75,0)
+c.Name="Item2"c.Parent=b;c.BackgroundColor3=Color3.new(0.470588,0.705882,0.705882)c.BackgroundTransparency=0.20000000298023;c.BorderColor3=Color3.new(0.784314,0.784314,0.784314)
+c.Position=UDim2.new(0.462664694,0,0.00893355627,0)
+c.Size=UDim2.new(0,50,0,45)d.Name="Spawner"d.Parent=c;
+d.BackgroundColor3=Color3.new(0.16,0.16,0.16)
+d.BackgroundTransparency=1;d.BorderColor3=Color3.new(0.16,0.16,0.16)d.Position=UDim2.new(0.197438627,0,0.216454804,0)
+d.Size=UDim2.new(0,30,0,25)d.Image="rbxassetid://413362308"
+e.Name="Item1"e.Parent=b;e.BackgroundColor3=Color3.new(0.16,0.16,0.16)
+e.BackgroundTransparency=0.20000000298023;
+e.BorderColor3=Color3.new(0.16,0.16,0.16)
+e.Position=UDim2.new(0.380673468,0,0.0312674493,0)
+e.Size=UDim2.new(0,40,0,35)f.Name="Item3"f.Parent=b;f.BackgroundColor3=Color3.new(0.470588,0.705882,0.705882)f.BackgroundTransparency=0.20000000298023;
+f.BorderColor3=Color3.new(0.784314,0.784314,0.784314)f.Position=UDim2.new(0.560761333,0,0.0312674493,0)f.Size=UDim2.new(0,40,0,35)g.Name="Name"g.Parent=b;g.BackgroundColor3=Color3.new(1,1,1)g.BackgroundTransparency=1;g.BorderSizePixel=0;
+g.Position=UDim2.new(0.380673498,0,0.120064691,0)g.Size=UDim2.new(0,163,0,29)
+g.Font=Enum.Font.Antique;g.Text="SPAWN"g.TextColor3=Color3.new(1,1,1)g.TextSize=30;g.TextWrapped=true;h.Name="Line"h.Parent=b;
+h.BackgroundColor3=Color3.new(0.784314,0.784314,0.784314)h.BorderSizePixel=0;h.Position=UDim2.new(0.676866829,0,0.0832404643,0)h.Size=UDim2.new(0,2,0,45)h.ZIndex=2;i.Name="Line"
+i.Parent=h;i.BackgroundColor3=Color3.new(0.784314,0.784314,0.784314)
+i.BorderSizePixel=0;i.Position=UDim2.new(-19.1803894,0,-0.0214077979,0)i.Size=UDim2.new(0,40,0,2)j.Name="SpawnBox"j.Parent=b;
+j.BackgroundColor3=Color3.new(0.16,0.16,0.16)
+j.BackgroundTransparency=0.5;j.BorderColor3=Color3.new(0,0,0)j.BorderSizePixel=0;j.Position=UDim2.new(0,0,0.18592298,0)j.Size=UDim2.new(1,0,0.81407702,0)k.Name="ItemList"k.Parent=j;
+k.BackgroundColor3=Color3.new(16,16,16)k.BackgroundTransparency=0.5;k.BorderColor3=Color3.new(0.258824,0.784314,0.784314)k.Position=UDim2.new(0.619326472,0,0.230450779,0)
+k.Size=UDim2.new(0,200,0,250)k.ScrollBarThickness=10;
+l.Name="ItemImage"l.Parent=j;l.BackgroundColor3=Color3.new(1,1,1)
+l.BackgroundTransparency=0.5;l.BorderColor3=Color3.new(1,1,1)l.BorderSizePixel=2;l.Position=UDim2.new(0.0732064396,0,0.148146927,0)
+l.Size=UDim2.new(0,150,0,100)l.Image="rbxassetid://2466652839"
+l.ImageTransparency=0.20000000298023;m.Name="Quality"m.Parent=j;m.BackgroundColor3=Color3.new(1,1,1)m.BackgroundTransparency=1;
+m.BorderSizePixel=0;m.Position=UDim2.new(0.0629575402,0,0.444817603,0)
+m.Size=UDim2.new(0,163,0,25)m.Font=Enum.Font.ArialBold;m.Text="PRISTINE"m.TextColor3=Color3.new(0,1,0.498039)
+m.TextSize=18;m.TextWrapped=true;n.Name="Desc."n.Parent=j;n.BackgroundColor3=Color3.new(1,1,1)n.BackgroundTransparency=1;
+n.BorderSizePixel=0;n.Position=UDim2.new(0.297218144,0,0.145780265,0)
+n.Size=UDim2.new(0,65,0,25)n.Font=Enum.Font.ArialBold;n.Text="DESC:"n.TextColor3=Color3.new(1,1,1)n.TextSize=15;
+n.TextWrapped=true;o.Name="DescInfo"o.Parent=n;o.BackgroundColor3=Color3.new(1,1,1)o.BackgroundTransparency=1;
+o.Position=UDim2.new(0.230769232,0,0.999999404,0)
+o.Size=UDim2.new(0,180,0,98)o.Font=Enum.Font.GothamSemibold;o.Text="hello what da fuck is this"o.TextColor3=Color3.new(1,1,1)o.TextSize=15;o.TextWrapped=true;p.Name="Weight."p.Parent=j;
+p.BackgroundColor3=Color3.new(1,1,1)p.BackgroundTransparency=1;p.BorderSizePixel=0;
+p.Position=UDim2.new(0.0644216537,0,0.513404131,0)p.Size=UDim2.new(0,65,0,25)p.Font=Enum.Font.ArialBold;
+p.Text="Weight:"p.TextColor3=Color3.new(1,1,1)p.TextSize=15;p.TextWrapped=true;
+q.Name="WeightInfo"q.Parent=p;q.BackgroundColor3=Color3.new(1,1,1)q.BackgroundTransparency=1;
+q.Position=UDim2.new(-0.0615384616,0,1,0)q.Size=UDim2.new(0,72,0,30)
+q.Font=Enum.Font.GothamSemibold;q.Text="9.999"q.TextColor3=Color3.new(1,1,1)q.TextSize=20;
+q.TextWrapped=true;r.Name="SlotAmount."
+r.Parent=j;r.BackgroundColor3=Color3.new(1,1,1)r.BackgroundTransparency=1;r.BorderSizePixel=0;
+r.Position=UDim2.new(0.177159593,0,0.513404071,0)r.Size=UDim2.new(0,98,0,25)
+r.Font=Enum.Font.ArialBold;r.Text="SlotAmount:"r.TextColor3=Color3.new(1,1,1)r.TextSize=15;
+r.TextWrapped=true;s.Name="SlotAmountInfo"s.Parent=r;s.BackgroundColor3=Color3.new(1,1,1)
+s.BackgroundTransparency=1;s.Position=UDim2.new(0.111930922,0,1,0)s.Size=UDim2.new(0,75,0,30)
+s.Font=Enum.Font.GothamSemibold;s.Text="20x20"s.TextColor3=Color3.new(1,1,1)s.TextSize=20;s.TextWrapped=true;
+t.Name="WeaponName"t.Parent=j;t.BackgroundColor3=Color3.new(1,1,1)
+t.BackgroundTransparency=1;t.BorderSizePixel=0;t.Position=UDim2.new(0.0366032198,0,0.0579894967,0)
+t.Size=UDim2.new(0,200,0,32)t.Font=Enum.Font.ArialBold;t.Text="Pistol Bitch"t.TextColor3=Color3.new(1,1,1)t.TextSize=16;t.TextWrapped=true;u.Name="SearchItem"u.Parent=j;
+u.BackgroundColor3=Color3.new(0.16,0.16,0.16)u.BackgroundTransparency=0.20000000298023;
+u.BorderColor3=Color3.new(1,1,1)u.Position=UDim2.new(0.619326472,0,0.148146927,0)
+u.Size=UDim2.new(0,200,0,30)u.Font=Enum.Font.GothamBold;u.PlaceholderColor3=Color3.new(1,1,1)
+u.Text="Item"u.TextColor3=Color3.new(1,1,1)u.TextSize=15;v.Parent=j;v.BackgroundColor3=Color3.new(0,1,1)
+v.BackgroundTransparency=0.5;v.BorderSizePixel=0;v.Position=UDim2.new(0.370424598,0,0.524001181,0)
+v.Size=UDim2.new(0,110,0,35)w.Name="Spawn"w.Parent=v;w.BackgroundColor3=Color3.new(0,1,0.498039)
+w.BorderSizePixel=0;w.Position=UDim2.new(-0.0399999991,0,-0.0949999988,0)w.Size=UDim2.new(1.01499999,0,1.01499999,0)
+w.Font=Enum.Font.ArialBold;
+w.Text="SPAWN"w.TextColor3=Color3.new(1,1,1)w.TextSize=20;x.Name="Creator"x.Parent=j;
+x.BackgroundColor3=Color3.new(1,1,1)x.BackgroundTransparency=1;x.BorderSizePixel=0;
+x.Position=UDim2.new(0.0219619311,0,0.930410266,0)x.Size=UDim2.new(0,142,0,25)x.Font=Enum.Font.GothamBlack;x.Text="By: OKAYYMADAPAKER"x.TextColor3=Color3.new(1,1,1)x.TextSize=12;x.TextWrapped=true;y.Name="Line"
+y.Parent=b;y.BackgroundColor3=Color3.new(0.784314,0.784314,0.784314)y.BorderSizePixel=0;
+y.Position=UDim2.new(0.321083516,0,0.0832404643,0)y.Size=UDim2.new(0,2,0,45)y.ZIndex=2;
+z.Name="Line"z.Parent=y;z.BackgroundColor3=Color3.new(0.784314,0.784314,0.784314)z.BorderSizePixel=0;
+z.Position=UDim2.new(-0.180389404,0,-0.0436300188,0)z.Size=UDim2.new(0,40,0,2)function PressZ(D)if D=="z"then if Open==false then b.Visible=false;Open=true elseif Open==true then
+b.Visible=true;Open=false end end end;B.KeyDown:connect(PressZ)local E={}local F=game.ReplicatedStorage['Game_Data'].Items:GetChildren()for G=1,#F do table.insert(E,F[G].Name)table.sort(E,function(H,I)return H:lower()<I:lower()end)end;local J=k;for G=1,#E do local K=Instance.new("TextButton")K.Name="B"K.Parent=J;
+K.BackgroundColor3=Color3.new(0.16,0.16,0.16)K.BorderSizePixel=0;
+K.Transparency=0.5;K.TextTransparency=0;K.Position=UDim2.new(0,3,0,(G-1)*22+3*G)K.Size=UDim2.new(0,195,0,24)
+K.Font=Enum.Font.SourceSansBold;K.FontSize=Enum.FontSize.Size14;K.Text=E[G]
+K.TextColor3=Color3.new(255,255,255)K.TextScaled=true;K.TextSize=20;local L=game.ReplicatedStorage.Game_Data.Items[K.Text].image.Value;local M=Instance.new("StringValue",K)M.Name='iimmaaggee'M.Value=L;local N=game.ReplicatedStorage.Game_Data.Items[K.Text].desc.Value;local O=Instance.new("StringValue",K)O.Name='ddeescc'O.Value=N;
+local P=game.ReplicatedStorage.Game_Data.Items[K.Text].Weight.Value;local Q=Instance.new("StringValue",K)Q.Name='wweeiigghhtt'Q.Value=P;local R=game.ReplicatedStorage.Game_Data.Items[K.Text].SlotAmount.Value;local S=Instance.new("StringValue",K)S.Name='aammoouunntt'S.Value=R;
+J.CanvasSize=UDim2.new(0,0,0,#E*22+G*3+3)K.MouseButton1Down:connect(function()
+u.Text=K.Text;t.Text=K.Text;l.Image=K.iimmaaggee.Value;o.Text=K.ddeescc.Value;
+q.Text=K.wweeiigghhtt.Value;s.Text=K.aammoouunntt.Value end)end;w.MouseButton1Down:connect(function()local T=game:GetService'Players'.LocalPlayer;local function U(V)if V==nil then local W,X=workspace:FindPartOnRayWithIgnoreList(Ray.new(T.Character.HumanoidRootPart.Position+T.Character.HumanoidRootPart.CFrame.lookVector*4,Vector3.new(0,-999,0)),{},true)if W then return X else return nil end else local W,X=workspace:FindPartOnRayWithIgnoreList(Ray.new(T.Character.HumanoidRootPart.Position+Vector3.new(math.random(-3,3),0,math.random(-3,3)),Vector3.new(0,-999,0)),{},true)if W then return X else return nil end end end;
+game.Workspace.Water.i:FireServer({u.Text,'Pristine'},U(),workspace.conf.Value)end)Match=function(Y,Z)return Y:lower():find(Z:lower())and true end;
+IndexContents=function(Z,_)local a0,a1=0,0;for G,a2 in next,k:GetChildren()do if _ then if Match(a2.Text,Z)then a0=a0+1.04;a2.Position=UDim2.new(0,3,0,a0*a2.AbsoluteSize.Y-a2.AbsoluteSize.Y+3)a2.Visible=true;a1=a1+a2.AbsoluteSize.Y;
+k.CanvasSize=UDim2.new(0,0,0,a1)else a2.Visible=false end else a2.Visible=true;a1=a1+a2.AbsoluteSize.Y;
+k.CanvasSize=UDim2.new(0,0,0,a1)end end end;u.Changed:connect(function()if u:IsFocused()then IndexContents(u.Text,true)end end)IndexContents('',false)
+--Press 'z' to Open / Close
+--credits to :FileExplorer for the spawner
+--Scelt made the theme dark it was bright before

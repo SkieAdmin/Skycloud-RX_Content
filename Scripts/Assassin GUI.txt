@@ -1,0 +1,629 @@
+game:GetService('StarterGui'):SetCore('SendNotification',{
+Title = 'Assassin GUI',
+Text = 'Found By SkieHacker',
+Duration = 3.154e+7,})
+
+game:GetService('StarterGui'):SetCore('SendNotification',{
+Title = 'Assassin GUI',
+Text = 'Thank You For Using Skycloud!',
+Duration = 3.154e+7,})
+
+-- Objects
+
+local AssassinsGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Tp = Instance.new("TextButton")
+local Other = Instance.new("TextButton")
+local Change = Instance.new("TextButton")
+local Bighead = Instance.new("TextButton")
+local Aimbot = Instance.new("TextButton")
+local Frame_2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local Frame_5 = Instance.new("Frame")
+local Exit = Instance.new("TextButton")
+local Frame2 = Instance.new("Frame")
+local TextLabel_5 = Instance.new("TextLabel")
+local Main = Instance.new("TextButton")
+local Frame_6 = Instance.new("Frame")
+local Frame_7 = Instance.new("Frame")
+local Frame_8 = Instance.new("Frame")
+local Frame_9 = Instance.new("Frame")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local Frame3 = Instance.new("Frame")
+local Frame_10 = Instance.new("Frame")
+local Frame_11 = Instance.new("Frame")
+local Frame_12 = Instance.new("Frame")
+local Frame_13 = Instance.new("Frame")
+local TextLabel_10 = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
+local TextLabel_13 = Instance.new("TextLabel")
+local TextLabel_14 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+
+-- Properties
+
+AssassinsGui.Name = "AssassinsGui"
+AssassinsGui.Parent = game.CoreGui
+
+Frame.Parent = AssassinsGui
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame.BorderSizePixel = 0
+Frame.Draggable = true
+Frame.Position = UDim2.new(0, 283, 0, 240)
+Frame.Size = UDim2.new(0, 614, 0, 348)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.new(0.333333, 1, 1)
+TextLabel.BackgroundTransparency = 5
+TextLabel.Position = UDim2.new(0, 223, 0, 309)
+TextLabel.Size = UDim2.new(0, 200, 0, 39)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "V 0.4"
+TextLabel.TextColor3 = Color3.new(0, 1, 0)
+TextLabel.TextSize = 25
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 5
+TextLabel_2.Position = UDim2.new(0, 88, 0, 256)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 39)
+TextLabel_2.Font = Enum.Font.SciFi
+TextLabel_2.Text = "Made By Jag Gaming #0060"
+TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_2.TextSize = 25
+
+Tp.Name = "Tp"
+Tp.Parent = Frame
+Tp.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+Tp.BorderSizePixel = 0
+Tp.Position = UDim2.new(0, 227, 0, 100)
+Tp.Size = UDim2.new(0, 159, 0, 35)
+Tp.Font = Enum.Font.SciFi
+Tp.Text = "Tp To Target"
+Tp.TextColor3 = Color3.new(1, 1, 1)
+Tp.TextSize = 30
+Tp.TextWrapped = true
+
+Other.Name = "Other"
+Other.Parent = Frame
+Other.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+Other.BorderSizePixel = 0
+Other.Position = UDim2.new(0, 196, 0, 241)
+Other.Size = UDim2.new(0, 223, 0, 35)
+Other.Font = Enum.Font.SciFi
+Other.Text = "Credits"
+Other.TextColor3 = Color3.new(1, 1, 1)
+Other.TextSize = 30
+Other.TextWrapped = true
+
+Change.Name = "Change"
+Change.Parent = Frame
+Change.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+Change.BorderSizePixel = 0
+Change.Position = UDim2.new(0, 174, 0, 174)
+Change.Size = UDim2.new(0, 266, 0, 35)
+Change.Font = Enum.Font.SciFi
+Change.Text = "Change Log"
+Change.TextColor3 = Color3.new(1, 1, 1)
+Change.TextSize = 30
+Change.TextWrapped = true
+
+Bighead.Name = "Bighead"
+Bighead.Parent = Frame
+Bighead.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+Bighead.BorderSizePixel = 0
+Bighead.Position = UDim2.new(0, 415, 0, 98)
+Bighead.Size = UDim2.new(0, 121, 0, 35)
+Bighead.Font = Enum.Font.SciFi
+Bighead.Text = "Big head"
+Bighead.TextColor3 = Color3.new(1, 1, 1)
+Bighead.TextSize = 30
+Bighead.TextWrapped = true
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = Frame
+Aimbot.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+Aimbot.BorderSizePixel = 0
+Aimbot.Position = UDim2.new(0, 65, 0, 101)
+Aimbot.Size = UDim2.new(0, 117, 0, 35)
+Aimbot.Font = Enum.Font.SciFi
+Aimbot.Text = "Aimbot"
+Aimbot.TextColor3 = Color3.new(1, 1, 1)
+Aimbot.TextSize = 30
+Aimbot.TextWrapped = true
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.new(0.772549, 0.772549, 0.772549)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 583, 0, 0)
+Frame_2.Size = UDim2.new(0, 31, 0, 348)
+
+Frame_3.Parent = Frame
+Frame_3.BackgroundColor3 = Color3.new(0.772549, 0.772549, 0.772549)
+Frame_3.BorderSizePixel = 0
+Frame_3.Size = UDim2.new(0, 35, 0, 348)
+
+Frame_4.Parent = Frame
+Frame_4.BackgroundColor3 = Color3.new(0.772549, 0.772549, 0.772549)
+Frame_4.BorderSizePixel = 0
+Frame_4.Size = UDim2.new(0, 614, 0, 35)
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.new(0.333333, 1, 1)
+TextLabel_3.BackgroundTransparency = 5
+TextLabel_3.Position = UDim2.new(0, 16, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 41)
+TextLabel_3.Font = Enum.Font.SciFi
+TextLabel_3.Text = "V 0.7"
+TextLabel_3.TextColor3 = Color3.new(0, 1, 0)
+TextLabel_3.TextSize = 25
+
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.new(0.333333, 1, 1)
+TextLabel_4.BackgroundTransparency = 5
+TextLabel_4.Position = UDim2.new(0, 207, 0, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 41)
+TextLabel_4.Font = Enum.Font.SciFi
+TextLabel_4.Text = "Assassins Gui"
+TextLabel_4.TextColor3 = Color3.new(0, 1, 0)
+TextLabel_4.TextSize = 25
+
+Frame_5.Parent = Frame
+Frame_5.BackgroundColor3 = Color3.new(0.772549, 0.772549, 0.772549)
+Frame_5.BorderSizePixel = 0
+Frame_5.Position = UDim2.new(0, 0, 0, 313)
+Frame_5.Size = UDim2.new(0, 614, 0, 35)
+
+Exit.Name = "Exit"
+Exit.Parent = Frame
+Exit.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0, 578, 0, 0)
+Exit.Size = UDim2.new(0, 36, 0, 35)
+Exit.Font = Enum.Font.SciFi
+Exit.Text = "X"
+Exit.TextColor3 = Color3.new(1, 1, 1)
+Exit.TextSize = 30
+Exit.TextWrapped = true
+
+Frame2.Name = "Frame2"
+Frame2.Parent = AssassinsGui
+Frame2.Active = true
+Frame2.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame2.BorderSizePixel = 0
+Frame2.Draggable = true
+Frame2.Position = UDim2.new(0, 373, 0, 163)
+Frame2.Size = UDim2.new(0, 498, 0, 295)
+Frame2.Visible = false
+
+TextLabel_5.Parent = Frame2
+TextLabel_5.BackgroundColor3 = Color3.new(0.333333, 1, 1)
+TextLabel_5.BackgroundTransparency = 5
+TextLabel_5.Position = UDim2.new(0, 888, 0, 49)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 99)
+TextLabel_5.Font = Enum.Font.SciFi
+TextLabel_5.Text = "Admin Scripts have been Removed Sorry"
+TextLabel_5.TextColor3 = Color3.new(0, 1, 0)
+TextLabel_5.TextSize = 25
+TextLabel_5.TextWrapped = true
+
+Main.Name = "Main"
+Main.Parent = Frame2
+Main.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0, 106, 0, 212)
+Main.Size = UDim2.new(0, 287, 0, 35)
+Main.Font = Enum.Font.SciFi
+Main.Text = "Back to Assassin GUI"
+Main.TextColor3 = Color3.new(1, 1, 1)
+Main.TextSize = 30
+Main.TextWrapped = true
+
+Frame_6.Parent = Frame2
+Frame_6.BackgroundColor3 = Color3.new(0.792157, 0.792157, 0.792157)
+Frame_6.BorderSizePixel = 0
+Frame_6.Size = UDim2.new(0, 498, 0, 35)
+
+Frame_7.Parent = Frame2
+Frame_7.BackgroundColor3 = Color3.new(0.792157, 0.792157, 0.792157)
+Frame_7.BorderSizePixel = 0
+Frame_7.Position = UDim2.new(0, 0, 0, 260)
+Frame_7.Size = UDim2.new(0, 498, 0, 35)
+
+Frame_8.Parent = Frame2
+Frame_8.BackgroundColor3 = Color3.new(0.792157, 0.792157, 0.792157)
+Frame_8.BorderSizePixel = 0
+Frame_8.Size = UDim2.new(0, 35, 0, 295)
+
+Frame_9.Parent = Frame2
+Frame_9.BackgroundColor3 = Color3.new(0.792157, 0.792157, 0.792157)
+Frame_9.BorderSizePixel = 0
+Frame_9.Position = UDim2.new(0, 467, 0, 0)
+Frame_9.Size = UDim2.new(0, 31, 0, 295)
+
+TextLabel_6.Parent = Frame2
+TextLabel_6.BackgroundColor3 = Color3.new(0.333333, 1, 1)
+TextLabel_6.BackgroundTransparency = 5
+TextLabel_6.Position = UDim2.new(0, 95, 0, 29)
+TextLabel_6.Size = UDim2.new(0, 308, 0, 76)
+TextLabel_6.Font = Enum.Font.SciFi
+TextLabel_6.Text = "Gui Desiginer :Jag Gaming #0060"
+TextLabel_6.TextColor3 = Color3.new(0, 1, 0)
+TextLabel_6.TextSize = 20
+TextLabel_6.TextWrapped = true
+
+TextLabel_7.Parent = Frame2
+TextLabel_7.BackgroundColor3 = Color3.new(0.333333, 1, 1)
+TextLabel_7.BackgroundTransparency = 5
+TextLabel_7.Position = UDim2.new(0, 95, 0, 56)
+TextLabel_7.Size = UDim2.new(0, 308, 0, 76)
+TextLabel_7.Font = Enum.Font.SciFi
+TextLabel_7.Text = "Aimbot Script: Unknown"
+TextLabel_7.TextColor3 = Color3.new(0, 1, 0)
+TextLabel_7.TextSize = 20
+TextLabel_7.TextWrapped = true
+
+TextLabel_8.Parent = Frame2
+TextLabel_8.BackgroundColor3 = Color3.new(0.333333, 1, 1)
+TextLabel_8.BackgroundTransparency = 5
+TextLabel_8.Position = UDim2.new(0, 95, 0, 89)
+TextLabel_8.Size = UDim2.new(0, 308, 0, 76)
+TextLabel_8.Font = Enum.Font.SciFi
+TextLabel_8.Text = "Tp To Assassin:Unknown"
+TextLabel_8.TextColor3 = Color3.new(0, 1, 0)
+TextLabel_8.TextSize = 20
+TextLabel_8.TextWrapped = true
+
+TextLabel_9.Parent = Frame2
+TextLabel_9.BackgroundColor3 = Color3.new(0.333333, 1, 1)
+TextLabel_9.BackgroundTransparency = 5
+TextLabel_9.Position = UDim2.new(0, 95, 0, 132)
+TextLabel_9.Size = UDim2.new(0, 308, 0, 76)
+TextLabel_9.Font = Enum.Font.SciFi
+TextLabel_9.Text = "BigHead: Iris on V3rm"
+TextLabel_9.TextColor3 = Color3.new(0, 1, 0)
+TextLabel_9.TextSize = 20
+TextLabel_9.TextWrapped = true
+
+Frame3.Name = "Frame3"
+Frame3.Parent = AssassinsGui
+Frame3.Active = true
+Frame3.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame3.BorderSizePixel = 0
+Frame3.Draggable = true
+Frame3.Position = UDim2.new(0, 723, 0, 268)
+Frame3.Size = UDim2.new(0, 572, 0, 292)
+Frame3.Visible = false
+
+Frame_10.Parent = Frame3
+Frame_10.BackgroundColor3 = Color3.new(0.792157, 0.792157, 0.792157)
+Frame_10.BorderSizePixel = 0
+Frame_10.Size = UDim2.new(0, 35, 0, 295)
+
+Frame_11.Parent = Frame3
+Frame_11.BackgroundColor3 = Color3.new(0.792157, 0.792157, 0.792157)
+Frame_11.BorderSizePixel = 0
+Frame_11.Position = UDim2.new(0, 541, 0, -3)
+Frame_11.Size = UDim2.new(0, 31, 0, 295)
+
+Frame_12.Parent = Frame3
+Frame_12.BackgroundColor3 = Color3.new(0.792157, 0.792157, 0.792157)
+Frame_12.BorderSizePixel = 0
+Frame_12.Position = UDim2.new(0, 0, 0, 260)
+Frame_12.Size = UDim2.new(0, 572, 0, 35)
+
+Frame_13.Parent = Frame3
+Frame_13.BackgroundColor3 = Color3.new(0.792157, 0.792157, 0.792157)
+Frame_13.BorderSizePixel = 0
+Frame_13.Size = UDim2.new(0, 572, 0, 35)
+
+TextLabel_10.Parent = Frame3
+TextLabel_10.BackgroundColor3 = Color3.new(0.333333, 1, 1)
+TextLabel_10.BackgroundTransparency = 5
+TextLabel_10.Position = UDim2.new(0, 186, 0, 0)
+TextLabel_10.Size = UDim2.new(0, 200, 0, 39)
+TextLabel_10.Font = Enum.Font.SciFi
+TextLabel_10.Text = "Changelog"
+TextLabel_10.TextColor3 = Color3.new(0, 1, 0)
+TextLabel_10.TextSize = 25
+
+Close.Name = "Close"
+Close.Parent = Frame3
+Close.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0, 0, 0, 259)
+Close.Size = UDim2.new(0, 217, 0, 33)
+Close.Font = Enum.Font.SciFi
+Close.Text = "Back to Main Gui"
+Close.TextColor3 = Color3.new(1, 1, 1)
+Close.TextSize = 30
+Close.TextWrapped = true
+
+TextLabel_11.Parent = Frame3
+TextLabel_11.BackgroundColor3 = Color3.new(0.333333, 1, 1)
+TextLabel_11.BackgroundTransparency = 5
+TextLabel_11.Position = UDim2.new(0, 186, 0, 25)
+TextLabel_11.Size = UDim2.new(0, 200, 0, 41)
+TextLabel_11.Font = Enum.Font.SciFi
+TextLabel_11.Text = "V 0.7"
+TextLabel_11.TextColor3 = Color3.new(0, 1, 0)
+TextLabel_11.TextSize = 25
+
+TextLabel_12.Parent = Frame3
+TextLabel_12.BackgroundColor3 = Color3.new(0.333333, 1, 1)
+TextLabel_12.BackgroundTransparency = 5
+TextLabel_12.Position = UDim2.new(0, 101, 0, 49)
+TextLabel_12.Size = UDim2.new(0, 370, 0, 39)
+TextLabel_12.Font = Enum.Font.SciFi
+TextLabel_12.Text = "Added Open Button"
+TextLabel_12.TextColor3 = Color3.new(0, 1, 0)
+TextLabel_12.TextSize = 15
+TextLabel_12.TextWrapped = true
+
+TextLabel_13.Parent = Frame3
+TextLabel_13.BackgroundColor3 = Color3.new(0.333333, 1, 1)
+TextLabel_13.BackgroundTransparency = 5
+TextLabel_13.Position = UDim2.new(0, 101, 0, 69)
+TextLabel_13.Size = UDim2.new(0, 370, 0, 39)
+TextLabel_13.Font = Enum.Font.SciFi
+TextLabel_13.Text = "Added Exit Button"
+TextLabel_13.TextColor3 = Color3.new(0, 1, 0)
+TextLabel_13.TextSize = 15
+TextLabel_13.TextWrapped = true
+
+TextLabel_14.Parent = Frame3
+TextLabel_14.BackgroundColor3 = Color3.new(0.333333, 1, 1)
+TextLabel_14.BackgroundTransparency = 5
+TextLabel_14.Position = UDim2.new(0, 101, 0, 86)
+TextLabel_14.Size = UDim2.new(0, 370, 0, 39)
+TextLabel_14.Font = Enum.Font.SciFi
+TextLabel_14.Text = "Fixed Text not showing up"
+TextLabel_14.TextColor3 = Color3.new(0, 1, 0)
+TextLabel_14.TextSize = 15
+TextLabel_14.TextWrapped = true
+
+TextButton.Parent = AssassinsGui
+TextButton.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0, 21, 0, 700)
+TextButton.Size = UDim2.new(0, 129, 0, 50)
+TextButton.Font = Enum.Font.SciFi
+TextButton.Text = "Open"
+TextButton.TextColor3 = Color3.new(1, 1, 1)
+TextButton.TextSize = 25
+TextButton.TextWrapped = true
+
+--Functions--
+Tp.MouseButton1Click:connect(function()
+	players = game.Players
+localPlayer = players.LocalPlayer
+bodyPosition = nil
+bodyGyro = nil
+currentTarget = nil
+
+function getCFrameBehindPlayer(targetPlayer)
+    if targetPlayer.Character ~= nil then
+        local targetTorso = targetPlayer.Character:FindFirstChild("HumanoidRootPart")
+        if targetTorso ~= nil then
+            local torsoRotation = targetTorso.CFrame:toAxisAngle()
+            local bottomOfTorso = targetTorso.CFrame.p-Vector3.new(0,targetTorso.Size.Y/2,0)
+            local behindTorso = CFrame.new(bottomOfTorso-targetTorso.CFrame.lookVector*1.2)+Vector3.new(0,1,0)
+            return behindTorso*CFrame.Angles(torsoRotation.X,torsoRotation.Y,torsoRotation.Z)
+        else
+            currentTarget = nil
+        end
+    else
+        currentTarget = nil
+    end
+end
+
+function teleportBehindPlayer(playerToTeleport,targetPlayer)
+    if playerToTeleport.Character ~= nil and targetPlayer.Character ~= nil then
+        local playerTorso = playerToTeleport.Character:FindFirstChild("HumanoidRootPart")
+        local targetTorso = targetPlayer.Character:FindFirstChild("HumanoidRootPart")
+        if playerTorso ~= nil and targetTorso ~= nil then
+            local behindPlayer = getCFrameBehindPlayer(targetPlayer)
+            playerTorso.CFrame = behindPlayer
+            if typeof(bodyPosition) == "Instance" and bodyPosition:IsA("BodyPosition") then
+                bodyPosition.Position = behindPlayer.p
+                bodyPosition.MaxForce = Vector3.new(5e9,5e9,5e9)
+            end
+            if typeof(bodyGyro) == "Instance" and bodyGyro:IsA("BodyGyro") then
+                bodyGyro.CFrame = behindPlayer
+                bodyGyro.MaxTorque = Vector3.new(5e9,5e9,5e9)
+            end
+        else
+            currentTarget = nil
+        end
+    else
+        currentTarget = nil
+    end
+end
+
+game.ReplicatedStorage.Remotes.UpdateTarget.OnClientEvent:connect(function(targetName)
+    local targetPlayer = players:FindFirstChild(targetName)
+    if targetPlayer ~= nil and targetPlayer:IsA("Player") and targetPlayer ~= localPlayer then
+        wait(1)
+        currentTarget = targetPlayer
+        teleportBehindPlayer(localPlayer,targetPlayer)
+        if currentTarget ~= nil and currentTarget.Character ~= nil and currentTarget.Character:FindFirstChildOfClass("Humanoid") then
+            currentTarget.Character:FindFirstChildOfClass("Humanoid").Died:connect(function()
+                if typeof(bodyPosition) == "Instance" and bodyPosition:IsA("BodyPosition") then
+                    bodyPosition.MaxForce = Vector3.new(0,0,0)
+                end
+                if typeof(bodyGyro) == "Instance" and bodyGyro:IsA("BodyGyro") then
+                    bodyGyro.MaxTorque = Vector3.new(0,0,0)
+                end
+            end)
+        else
+            currentTarget = nil
+        end
+    else
+        currentTarget = nil
+    end
+end)
+
+function setupCharacter(char)
+    bodyPosition = Instance.new("BodyPosition")
+    bodyPosition.D = 100
+    bodyPosition.MaxForce = Vector3.new(0,0,0)
+    bodyPosition.P = 8000
+    bodyGyro = Instance.new("BodyGyro")
+    bodyGyro.D = 100
+    bodyGyro.MaxTorque = Vector3.new(0,0,0)
+    bodyGyro.P = 8000
+    bodyPosition.Parent = char:WaitForChild("HumanoidRootPart")
+    bodyGyro.Parent = char.HumanoidRootPart
+    char:WaitForChild("Humanoid").Died:connect(function()
+        currentTarget = nil
+        if typeof(bodyPosition) == "Instance" and bodyPosition:IsA("BodyPosition") then
+            bodyPosition.MaxForce = Vector3.new(0,0,0)
+        end
+        if typeof(bodyGyro) == "Instance" and bodyGyro:IsA("BodyGyro") then
+            bodyGyro.MaxTorque = Vector3.new(0,0,0)
+        end
+    end)
+end
+
+if localPlayer.Character ~= nil then
+    setupCharacter(localPlayer.Character)
+end
+
+localPlayer.CharacterAdded:connect(function(char)
+    setupCharacter(char)
+end)
+
+game:GetService("RunService").RenderStepped:connect(function()
+    if currentTarget ~= nil and currentTarget:IsA("Player") and currentTarget.Character ~= nil then
+        local behindPlayer = getCFrameBehindPlayer(currentTarget)
+        if behindPlayer ~= nil and typeof(bodyPosition) == "Instance" and bodyPosition:IsA("BodyPosition") then
+            bodyPosition.Position = behindPlayer.p
+            bodyPosition.MaxForce = Vector3.new(5e9,5e9,5e9)
+        end
+        if typeof(bodyGyro) == "Instance" and bodyGyro:IsA("BodyGyro") then
+            local targetTorso = currentTarget.Character:FindFirstChild("HumanoidRootPart")
+            if targetTorso ~= nil then
+                bodyGyro.CFrame = targetTorso.CFrame
+                bodyGyro.MaxTorque = Vector3.new(5e9,5e9,5e9)
+            end
+        end
+    else
+        currentTarget = nil
+    end
+end)
+end)
+
+Bighead.MouseButton1Down:connect(function()
+	local exist = game.Workspace:FindFirstChild("AimBot")
+if exist then
+  game.Workspace.AimBot:Destroy()
+end
+local name = game.Players.LocalPlayer.Name
+local mouse = game.Players.LocalPlayer:GetMouse().Hit
+part = Instance.new("Part")
+part.Name = "AimBot"
+part.Parent = game.Workspace
+part.Anchored = true 
+part.CFrame = CFrame.new(game.Players.LocalPlayer.Character["Left Leg"].Position)
+while wait() do
+  local target = game.Players.LocalPlayer.PlayerGui.ScreenGui.UI.Target.Img.PlayerText.Text
+  pcall(function()game.Players[target].Character.Head.CFrame = CFrame.new(game.Workspace.AimBot.Position) end)
+  pcall(function()game.Players[target].Character.Head.Size = Vector3.new(10, 10, 10) end)
+  pcall(function()game.Players[target].Character.Head.Mesh:Destroy() end)
+end
+end)
+
+Aimbot.MouseButton1Down:connect(function()
+wait()
+local Player = game:GetService("Players").LocalPlayer
+local Mouse = Player:GetMouse()
+local findNearestTorso = function(pos)
+local list = workspace:GetChildren()
+local torso = nil
+local dist = 999
+local temp = nil
+local human = nil
+local temp2 = nil
+for x = 1, #list do
+temp2 = list[x]
+if (temp2.className == "Model") and (temp2 ~= Player.Character) then
+temp = temp2:findFirstChild("HumanoidRootPart")
+human = temp2:findFirstChild("Humanoid")
+if (temp ~= nil) and (human ~= nil) and (human.Health > 0) then
+if (temp.Position - pos).magnitude < dist then
+torso = temp
+dist = (temp.Position - pos).magnitude
+end
+end
+end
+end
+return torso
+end
+ 
+local Start = function()
+if workspace:findFirstChild("KnifeHost") then
+Connection = workspace.KnifeHost.ChildAdded:connect(function(Knife)
+Connection:disconnect()
+if Knife then
+if Player and Player.Character and Player.Character:findFirstChild("Head") then
+if findNearestTorso(Player.Character.Head.Position) then
+local Torso = findNearestTorso(Player.Character.Head.Position)
+Knife.CFrame = Torso.CFrame
+for i=1, 3 do
+wait()
+if Knife and Torso then
+Knife.CFrame = Torso.CFrame
+end
+end
+end
+end
+end
+end)
+else
+print("No host")
+end
+end
+Mouse.Button1Up:connect(Start)
+end)
+
+
+
+Other.MouseButton1Down:connect(function()
+    Frame.Visible = false
+	Frame2.Visible = true
+end)
+	
+Main.MouseButton1Down:connect(function()
+	Frame.Visible = true
+	Frame2.Visible = false
+end)
+
+Change.MouseButton1Down:connect(function()
+	Frame.Visible = false
+	Frame3.Visible = true
+end)
+
+Close.MouseButton1Down:connect(function()
+	Frame.Visible = true
+	Frame3.Visible = false
+end)
+
+Exit.MouseButton1Down:connect(function()
+	Frame.Visible = false
+end)
+
+
+TextButton.MouseButton1Down:connect(function()
+	Frame.Visible = true
+end)

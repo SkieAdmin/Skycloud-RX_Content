@@ -1,0 +1,237 @@
+game:GetService('StarterGui'):SetCore('SendNotification',{
+Title = 'Skycloud-Exploit',
+Text = 'Thank You For Using Skycloud!',
+Duration = 3.154e+7,})
+
+print("Updated. Works now.")
+spawn(function()
+	print("Credits to LuckyMMB for his gui. It adds value.")
+	loadstring(game:HttpGet('https://pastebin.com/raw/gQggy1cw', true))()
+end)
+local loopHack = false
+local coins = game.Workspace:WaitForChild("__REMOTES"):WaitForChild("Game"):WaitForChild("Coins")
+local save = game.Workspace:WaitForChild("__REMOTES"):WaitForChild("Core"):WaitForChild("Get Other Stats"):InvokeServer()
+local plr = game:GetService("Players").LocalPlayer
+local petids = {}
+local petAP = {}
+local hatAP = {}
+local pets = game:GetService("Workspace")["__REMOTES"]:WaitForChild("Game").Pets
+local a = #save[plr.Name]["Save"]["Pets"]
+local b = #save[plr.Name]["Save"]["Hats"]
+local done = "lol meme"
+local f = -1
+function p()
+    for i=1,a do
+		b = #save[plr.Name]["Save"]["Hats"]
+        if(save[plr.Name]["Save"]["Pets"][a].e == true) then
+            table.insert(petids, save[plr.Name]["Save"]["Pets"][a].id)
+            petAP[save[plr.Name]["Save"]["Pets"][a].id] = tonumber(save[plr.Name]["Save"]["Pets"][a].ba) * 4
+			for i=1,b do
+				if(save[plr.Name]["Save"]["Hats"][b].e == save[plr.Name]["Save"]["Pets"][a].id) then
+					hatAP[save[plr.Name]["Save"]["Hats"][b].e] = tonumber(save[plr.Name]["Save"]["Hats"][b].ba) * 4
+				end
+				b = b - 1
+			end
+			if hatAP[save[plr.Name]["Save"]["Pets"][a].id] == nil then
+				hatAP[save[plr.Name]["Save"]["Pets"][a].id] = 0
+			end
+            print("Detected: ( Pet: ",save[plr.Name]["Save"]["Pets"][a].id," Damage: ",tonumber(save[plr.Name]["Save"]["Pets"][a].ba) * 4," Hat: ", hatAP[save[plr.Name]["Save"]["Pets"][a].id] ,")")
+        end
+        a = a - 1
+    end
+end
+p()
+function mf(b)
+    while(loopHack and workspace.__THINGS.Coins:FindFirstChild(b.Name) and b.Position.Y > 100) do
+        wait(0.2)
+        for _,k in pairs(petids) do
+            coins:FireServer("Mine",b.Name, petAP[k], k)
+        end
+    end
+end
+function ef(b)
+    while(loopHack and workspace.__THINGS.Coins:FindFirstChild(b.Name) and b.Position.Y < 100) do
+        wait(0.2)
+        for _,k in pairs(petids) do
+            coins:FireServer("Mine",b.Name, petAP[k], k)
+        end
+    end
+end
+function af(b)
+    while(loopHack and workspace.__THINGS.Coins:FindFirstChild(b.Name)) do
+        wait(0.2)
+        for _,k in pairs(petids) do
+            coins:FireServer("Mine",b.Name, petAP[k], k)
+        end
+    end
+end
+local GUI = Instance.new("ScreenGui")
+local dragFrame = Instance.new("Frame")
+local aButton = Instance.new("TextButton")
+local eButton = Instance.new("TextButton")
+local mButton = Instance.new("TextButton")
+local tButton = Instance.new("TextButton")
+local LSTitle = Instance.new("TextLabel")
+local Credit = Instance.new("TextLabel")
+GUI.Name = "qewrfgqrg4q"
+GUI.Parent = game.CoreGui
+dragFrame.Name = "dragFrame"
+dragFrame.Parent = GUI
+dragFrame.BackgroundColor3 = Color3.new(0.172549, 0, 0.0627451)
+dragFrame.BorderSizePixel = 2
+dragFrame.Position = UDim2.new(0.241050124, 0, 0.177033499, 0)
+dragFrame.Size = UDim2.new(0, 263, 0, 200)
+dragFrame.Style = Enum.FrameStyle.RobloxRound
+dragFrame.Active = true
+dragFrame.Draggable = true
+eButton.Name = "eButton"
+eButton.Parent = dragFrame
+eButton.BackgroundColor3 = Color3.new(1, 0.0392157, 0.215686)
+eButton.Position = UDim2.new(0.02, 0, 0.331685402, 0)
+eButton.Size = UDim2.new(0, 75, 0, 42)
+eButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+eButton.Font = Enum.Font.Code
+eButton.Text = "Earth"
+eButton.TextColor3 = Color3.new(0, 0, 0)
+eButton.TextSize = 14
+eButton.MouseButton1Down:connect(function()
+  if loopHack then
+    loopHack = false
+    eButton.Text = "Earth"
+    aButton.Visible = true
+    mButton.Visible = true
+  else
+    aButton.Visible = false
+    mButton.Visible = false
+    f = 1
+    coins = game.Workspace:WaitForChild("__REMOTES"):WaitForChild("Game"):WaitForChild("Coins")
+    save = game.Workspace:WaitForChild("__REMOTES"):WaitForChild("Core"):WaitForChild("Get Other Stats"):InvokeServer()
+    plr = game:GetService("Players").LocalPlayer
+    petids = {}
+    petAP = {}
+    pets = game:GetService("Workspace")["__REMOTES"]:WaitForChild("Game").Pets
+    a = #save[plr.Name]["Save"]["Pets"]
+    done = "lol meme"
+    p()
+    eButton.Text = "Stop"
+    loopHack = true
+  end
+end)
+aButton.Name = "aButton"
+aButton.Parent = dragFrame
+aButton.BackgroundColor3 = Color3.new(1, 0.0392157, 0.215686)
+aButton.Position = UDim2.new(0.35, 0, 0.331685402, 0)
+aButton.Size = UDim2.new(0, 75, 0, 42)
+aButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+aButton.Font = Enum.Font.Code
+aButton.Text = "All"
+aButton.TextColor3 = Color3.new(0, 0, 0)
+aButton.TextSize = 14
+aButton.MouseButton1Down:connect(function()
+  if loopHack then
+    loopHack = false
+    aButton.Text = "All"
+    eButton.Visible = true
+    mButton.Visible = true
+  else
+    eButton.Visible = false
+    mButton.Visible = false
+    f = 0
+    coins = game.Workspace:WaitForChild("__REMOTES"):WaitForChild("Game"):WaitForChild("Coins")
+    save = game.Workspace:WaitForChild("__REMOTES"):WaitForChild("Core"):WaitForChild("Get Other Stats"):InvokeServer()
+    plr = game:GetService("Players").LocalPlayer
+    petids = {}
+    petAP = {}
+    pets = game:GetService("Workspace")["__REMOTES"]:WaitForChild("Game").Pets
+    a = #save[plr.Name]["Save"]["Pets"]
+    done = "lol meme"
+    p()
+    aButton.Text = "Stop"
+    loopHack = true
+  end
+end)
+mButton.Name = "mButton"
+mButton.Parent = dragFrame
+mButton.BackgroundColor3 = Color3.new(1, 0.0392157, 0.215686)
+mButton.Position = UDim2.new(0.68, 0, 0.331685402, 0)
+mButton.Size = UDim2.new(0, 75, 0, 42)
+mButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+mButton.Font = Enum.Font.Code
+mButton.Text = "Moon"
+mButton.TextColor3 = Color3.new(0, 0, 0)
+mButton.TextSize = 14
+mButton.MouseButton1Down:connect(function()
+  if loopHack then
+    loopHack = false
+    mButton.Text = "Moon"
+    aButton.Visible = true
+    eButton.Visible = true
+  else
+    aButton.Visible = false
+    eButton.Visible = false
+	f = 2
+    coins = game.Workspace:WaitForChild("__REMOTES"):WaitForChild("Game"):WaitForChild("Coins")
+    save = game.Workspace:WaitForChild("__REMOTES"):WaitForChild("Core"):WaitForChild("Get Other Stats"):InvokeServer()
+    plr = game:GetService("Players").LocalPlayer
+    petids = {}
+    petAP = {}
+    pets = game:GetService("Workspace")["__REMOTES"]:WaitForChild("Game").Pets
+    a = #save[plr.Name]["Save"]["Pets"]
+    done = "lol meme"
+    p()
+    mButton.Text = "Stop"
+    loopHack = true
+  end
+end)
+tButton.Name = "tButton"
+tButton.Parent = dragFrame
+tButton.BackgroundColor3 = Color3.new(1, 0.0392157, 0.215686)
+tButton.Position = UDim2.new(0.02, 0, 0.6, 0)
+tButton.Size = UDim2.new(0, 239, 0, 42)
+tButton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+tButton.Font = Enum.Font.Code
+tButton.Text = "Teleport Menu"
+tButton.TextColor3 = Color3.new(0, 0, 0)
+tButton.TextSize = 14
+tButton.MouseButton1Down:connect(function()
+  game.Players.LocalPlayer.PlayerGui.Teleport.Enabled = true
+end)
+LSTitle.Name = "LSTitle"
+LSTitle.Parent = dragFrame
+LSTitle.BackgroundColor3 = Color3.new(1, 1, 1)
+LSTitle.BackgroundTransparency = 1
+LSTitle.Position = UDim2.new(0.022813689, 0, 0.0188706424, 0)
+LSTitle.Size = UDim2.new(0, 234, 0, 23)
+LSTitle.Font = Enum.Font.Code
+LSTitle.Text = "Pet Simulator Gui"
+LSTitle.TextColor3 = Color3.new(1, 1, 1)
+LSTitle.TextSize = 17
+Credit.Name = "Credit"
+Credit.Parent = dragFrame
+Credit.BackgroundColor3 = Color3.new(1, 1, 1)
+Credit.BackgroundTransparency = 1
+Credit.Position = UDim2.new(0.562813689, 0, 0.8588706424, 0)
+Credit.Size = UDim2.new(0, 100, 0, 23)
+Credit.Font = Enum.Font.Code
+Credit.Text = "By ShivamAmin"
+Credit.TextColor3 = Color3.new(1, 1, 1)
+Credit.TextSize = 17
+while true do
+    while loopHack do
+        for _,b in next, workspace.__THINGS.Coins:GetChildren() do
+            if(done ~= b) then
+				if(f == 0) then
+                	af(b)
+				elseif(f == 1) then
+					ef(b)
+				elseif(f == 2) then
+					mf(b)
+				else
+					print("Somethings wrong.")
+				end
+            end
+        end
+        wait()
+    end
+    wait()
+end

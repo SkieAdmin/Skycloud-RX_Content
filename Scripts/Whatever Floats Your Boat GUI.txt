@@ -1,0 +1,350 @@
+local KilledLeBoat = Instance.new("ScreenGui")
+local MainArea = Instance.new("Frame")
+local Credits = Instance.new("TextLabel")
+local WalkSpeed = Instance.new("TextButton")
+local Teleport = Instance.new("TextButton")
+local ChestTp = Instance.new("TextButton")
+local Farm = Instance.new("TextButton")
+local ForceTeam = Instance.new("TextButton")
+local TeamSpam = Instance.new("TextButton")
+local ModifyWindow = Instance.new("Frame")
+local Message = Instance.new("TextLabel")
+local Input = Instance.new("TextBox")
+local OK = Instance.new("TextButton")
+local Cancel = Instance.new("TextButton")
+local TeamSpamGui = Instance.new("Frame")
+local Message_2 = Instance.new("TextLabel")
+local Start = Instance.new("TextButton")
+local Stop = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local plr = game:GetService("Players").LocalPlayer
+local plrs = game:GetService("Players")
+
+KilledLeBoat.Name = "KilledLeBoat"
+KilledLeBoat.Parent = game:GetService("CoreGui")
+KilledLeBoat.ResetOnSpawn = false
+
+MainArea.Name = "MainArea"
+MainArea.Parent = KilledLeBoat
+MainArea.Active = true
+MainArea.BackgroundColor3 = Color3.new(0.32549, 0.32549, 0.32549)
+MainArea.Draggable = true
+MainArea.Position = UDim2.new(0.57989496, 0, 0.505169868, 0)
+MainArea.Size = UDim2.new(0, 523, 0, 308)
+
+Credits.Name = "Credits"
+Credits.Parent = MainArea
+Credits.BackgroundColor3 = Color3.new(1, 1, 1)
+Credits.BackgroundTransparency = 1
+Credits.Position = UDim2.new(0.296367109, 0, 0.019480519, 0)
+Credits.Size = UDim2.new(0, 201, 0, 48)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Made by tostring on v3rm Contact me on discord: Kitty221();#7244"
+Credits.TextColor3 = Color3.new(1, 1, 1)
+Credits.TextScaled = true
+Credits.TextSize = 14
+Credits.TextWrapped = true
+
+WalkSpeed.Name = "WalkSpeed"
+WalkSpeed.Parent = MainArea
+WalkSpeed.BackgroundColor3 = Color3.new(0, 0, 0)
+WalkSpeed.Position = UDim2.new(0.0363288671, 0, 0.324675322, 0)
+WalkSpeed.Size = UDim2.new(0, 145, 0, 42)
+WalkSpeed.Font = Enum.Font.Arial
+WalkSpeed.Text = "WalkSpeed"
+WalkSpeed.TextColor3 = Color3.new(1, 1, 1)
+WalkSpeed.TextScaled = true
+WalkSpeed.TextSize = 14
+WalkSpeed.TextWrapped = true
+
+Teleport.Name = "Teleport"
+Teleport.Parent = MainArea
+Teleport.BackgroundColor3 = Color3.new(0, 0, 0)
+Teleport.Position = UDim2.new(0.361376643, 0, 0.324675322, 0)
+Teleport.Size = UDim2.new(0, 145, 0, 42)
+Teleport.Font = Enum.Font.Arial
+Teleport.Text = "Teleport"
+Teleport.TextColor3 = Color3.new(1, 1, 1)
+Teleport.TextScaled = true
+Teleport.TextSize = 14
+Teleport.TextWrapped = true
+
+ChestTp.Name = "ChestTp"
+ChestTp.Parent = MainArea
+ChestTp.BackgroundColor3 = Color3.new(0, 0, 0)
+ChestTp.Position = UDim2.new(0.680688322, 0, 0.324675322, 0)
+ChestTp.Size = UDim2.new(0, 145, 0, 42)
+ChestTp.Font = Enum.Font.Arial
+ChestTp.Text = "ChestTp"
+ChestTp.TextColor3 = Color3.new(1, 1, 1)
+ChestTp.TextScaled = true
+ChestTp.TextSize = 14
+ChestTp.TextWrapped = true
+
+Farm.Name = "Farm"
+Farm.Parent = MainArea
+Farm.BackgroundColor3 = Color3.new(0, 0, 0)
+Farm.Position = UDim2.new(0.680688322, 0, 0.629870117, 0)
+Farm.Size = UDim2.new(0, 145, 0, 42)
+Farm.Font = Enum.Font.Arial
+Farm.Text = "Farm"
+Farm.TextColor3 = Color3.new(1, 1, 1)
+Farm.TextScaled = true
+Farm.TextSize = 14
+Farm.TextWrapped = true
+
+ForceTeam.Name = "ForceTeam"
+ForceTeam.Parent = MainArea
+ForceTeam.BackgroundColor3 = Color3.new(0, 0, 0)
+ForceTeam.Position = UDim2.new(0.361376643, 0, 0.629870117, 0)
+ForceTeam.Size = UDim2.new(0, 145, 0, 42)
+ForceTeam.Font = Enum.Font.Arial
+ForceTeam.Text = "Force People On Team"
+ForceTeam.TextColor3 = Color3.new(1, 1, 1)
+ForceTeam.TextScaled = true
+ForceTeam.TextSize = 14
+ForceTeam.TextWrapped = true
+
+TeamSpam.Name = "TeamSpam"
+TeamSpam.Parent = MainArea
+TeamSpam.BackgroundColor3 = Color3.new(0, 0, 0)
+TeamSpam.Position = UDim2.new(0.0363288671, 0, 0.629870117, 0)
+TeamSpam.Size = UDim2.new(0, 145, 0, 42)
+TeamSpam.Font = Enum.Font.Arial
+TeamSpam.Text = "Team Spam"
+TeamSpam.TextColor3 = Color3.new(1, 1, 1)
+TeamSpam.TextScaled = true
+TeamSpam.TextSize = 14
+TeamSpam.TextWrapped = true
+
+ModifyWindow.Name = "ModifyWindow"
+ModifyWindow.Parent = KilledLeBoat
+ModifyWindow.Active = true
+ModifyWindow.BackgroundColor3 = Color3.new(0.219608, 0.219608, 0.219608)
+ModifyWindow.Draggable = true
+ModifyWindow.Position = UDim2.new(0.387846977, 0, 0.379615963, 0)
+ModifyWindow.Size = UDim2.new(0, 298, 0, 162)
+ModifyWindow.Visible = false
+
+Message.Name = "Message"
+Message.Parent = ModifyWindow
+Message.BackgroundColor3 = Color3.new(1, 1, 1)
+Message.BackgroundTransparency = 1
+Message.Position = UDim2.new(0.0469798669, 0, 0.055555556, 0)
+Message.Size = UDim2.new(0, 261, 0, 76)
+Message.Font = Enum.Font.Arial
+Message.Text = "Please type a "
+Message.TextColor3 = Color3.new(1, 1, 1)
+Message.TextScaled = true
+Message.TextSize = 14
+Message.TextWrapped = true
+
+Input.Name = "Input"
+Input.Parent = ModifyWindow
+Input.BackgroundColor3 = Color3.new(0, 0, 0)
+Input.Position = UDim2.new(0.164429531, 0, 0.561728418, 0)
+Input.Size = UDim2.new(0, 200, 0, 50)
+Input.Font = Enum.Font.Arial
+Input.Text = "Type here"
+Input.TextColor3 = Color3.new(1, 1, 1)
+Input.TextScaled = true
+Input.TextSize = 14
+Input.TextWrapped = true
+
+OK.Name = "OK"
+OK.Parent = ModifyWindow
+OK.BackgroundColor3 = Color3.new(0, 1, 0)
+OK.Position = UDim2.new(0, 0, 1, 0)
+OK.Size = UDim2.new(0, 154, 0, 50)
+OK.Font = Enum.Font.SourceSans
+OK.Text = "OK"
+OK.TextScaled = true
+OK.TextSize = 14
+OK.TextWrapped = true
+
+Cancel.Name = "Cancel"
+Cancel.Parent = ModifyWindow
+Cancel.BackgroundColor3 = Color3.new(1, 0, 0)
+Cancel.Position = UDim2.new(0.516778529, 0, 1, 0)
+Cancel.Size = UDim2.new(0, 144, 0, 50)
+Cancel.Font = Enum.Font.SourceSans
+Cancel.Text = "Cancel"
+Cancel.TextScaled = true
+Cancel.TextSize = 14
+Cancel.TextWrapped = true
+
+TeamSpamGui.Name = "TeamSpamGui"
+TeamSpamGui.Parent = KilledLeBoat
+TeamSpamGui.Active = true
+TeamSpamGui.BackgroundColor3 = Color3.new(0.219608, 0.219608, 0.219608)
+TeamSpamGui.Draggable = true
+TeamSpamGui.Position = UDim2.new(0.387846977, 0, 0.379615963, 0)
+TeamSpamGui.Size = UDim2.new(0, 298, 0, 162)
+TeamSpamGui.Visible = false
+
+Message_2.Name = "Message"
+Message_2.Parent = TeamSpamGui
+Message_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Message_2.BackgroundTransparency = 1
+Message_2.Position = UDim2.new(0.0469798669, 0, 0.055555556, 0)
+Message_2.Size = UDim2.new(0, 261, 0, 76)
+Message_2.Font = Enum.Font.Arial
+Message_2.Text = "Team Spam"
+Message_2.TextColor3 = Color3.new(1, 1, 1)
+Message_2.TextScaled = true
+Message_2.TextSize = 14
+Message_2.TextWrapped = true
+
+Start.Name = "Start"
+Start.Parent = TeamSpamGui
+Start.BackgroundColor3 = Color3.new(0, 1, 0)
+Start.Position = UDim2.new(0.0469798669, 0, 0.561728418, 0)
+Start.Size = UDim2.new(0, 116, 0, 50)
+Start.Font = Enum.Font.SourceSans
+Start.Text = "Start"
+Start.TextScaled = true
+Start.TextSize = 14
+Start.TextWrapped = true
+
+Stop.Name = "Stop"
+Stop.Parent = TeamSpamGui
+Stop.BackgroundColor3 = Color3.new(1, 0, 0)
+Stop.Position = UDim2.new(0.557047009, 0, 0.561728418, 0)
+Stop.Size = UDim2.new(0, 123, 0, 50)
+Stop.Font = Enum.Font.SourceSans
+Stop.Text = "Stop"
+Stop.TextScaled = true
+Stop.TextSize = 14
+Stop.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = TeamSpamGui
+Close.BackgroundColor3 = Color3.new(1, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.895973146, 0, 0, 0)
+Close.Size = UDim2.new(0, 31, 0, 31)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextScaled = true
+Close.TextSize = 14
+Close.TextWrapped = true
+
+
+local function tpchests()
+	for _,v in next, workspace:GetChildren() do
+		if v.Name == "ChestModel" then
+			for _,vv in next, v:GetDescendants() do
+				if vv:IsA("Part") then
+					vv.Anchored = true
+					vv.CanCollide = false
+				end
+			end
+			v:SetPrimaryPartCFrame(plr.Character.HumanoidRootPart.CFrame)
+		end
+	end
+end
+
+local function ws(speed)
+	plr.Character:FindFirstChildOfClass("Humanoid").WalkSpeed = speed
+end
+
+local function tp(target)
+	plr.Character.HumanoidRootPart.CFrame = plrs[target].Character.HumanoidRootPart.CFrame
+end
+
+local function teamspam(boo)
+	_G.teamspam = boo
+	print(boo)
+	while wait() do
+		if _G.teamspam == true then
+			local Event = game:GetService("ReplicatedStorage").TeamManager.MakeTeam
+			Event:FireServer()
+		else
+			break
+		end
+	end
+end
+
+local function forceteam()
+	for _,v in next, plrs:GetPlayers() do
+		if v.Name ~= plr.Name then
+			local A_1 = "Invite"
+			local A_2 = v.Name
+			local Event = game:GetService("ReplicatedStorage").TeamManager.InviteToTeam
+			Event:FireServer(A_1, A_2)
+		
+			local A_1 = "RequestAccepted"
+			local A_2 = v.Name
+			local Event = game:GetService("ReplicatedStorage").TeamManager.InviteToTeam
+			Event:FireServer(A_1, A_2)
+		end
+	end
+end
+
+local function tpplayers()
+	for _,v in next, plrs:GetPlayers() do
+		if v.Name ~= plr.Name then
+			v.Character.HumanoidRootPart.Anchored = true
+			v.Character.HumanoidRootPart.CanCollide = false
+			v.Character.HumanoidRootPart.Transparency = 0
+			v.Character.HumanoidRootPart.Position = plr.Character.HumanoidRootPart.Position
+		end
+	end
+end
+
+WalkSpeed.MouseButton1Click:Connect(function()
+	ModifyWindow.Visible = true
+	Message.Text = "Please type a number."
+	walkspeed = true
+end)
+
+Teleport.MouseButton1Click:Connect(function()
+	ModifyWindow.Visible = true
+	Message.Text = "Please type a player."
+	teleport = true
+end)
+
+ChestTp.MouseButton1Click:Connect(function()
+	tpchests()
+end)
+
+TeamSpam.MouseButton1Click:Connect(function()
+	TeamSpamGui.Visible = true
+end)
+
+Start.MouseButton1Click:Connect(function()
+	teamspam(true)
+end)
+
+Stop.MouseButton1Click:Connect(function()
+	teamspam(false)
+end)
+
+Close.MouseButton1Click:Connect(function()
+	TeamSpamGui.Visible = false
+end)
+
+Farm.MouseButton1Click:Connect(function()
+	tpplayers()
+end)
+
+ForceTeam.MouseButton1Click:Connect(function()
+	forceteam()
+end)
+
+OK.MouseButton1Click:Connect(function()
+	if teleport == true then
+	tp(Input.Text)
+	ModifyWindow.Visible = false
+	teleport = false
+	elseif walkspeed == true then
+	ws(Input.Text)
+	ModifyWindow.Visible = false
+	walkspeed = false
+	end
+end)
+Cancel.MouseButton1Click:Connect(function()
+	ModifyWindow.Visible = false
+	walkspeed = false
+	teleport = false
+end)

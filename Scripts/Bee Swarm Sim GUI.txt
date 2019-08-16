@@ -1,0 +1,1884 @@
+game:GetService('StarterGui'):SetCore('SendNotification',{
+Title = 'Bee Swarm Sim GUI',
+Text = 'Found By AnimeLover',
+Duration = 3.154e+7,})
+
+game:GetService('StarterGui'):SetCore('SendNotification',{
+Title = 'Bee Swarm Sim GUI',
+Text = 'Thank You For Using Skycloud!',
+Duration = 3.154e+7,})
+
+print("PRO BOI GET BAN")
+print("THIS IS SCAMAZ")
+print("Gui by Aresuu/Tokumei")
+print("Get Any Bees Script from LeviTheOtaku")
+
+mouse = game.Players.LocalPlayer:GetMouse()
+
+antchallengeescape = false
+AutoDigActive = false
+PollenFarmActive = false
+Field1AFActive = false
+Field2AFActive = false
+Field3AFActive = false
+Field4AFActive = false
+Field5AFActive = false
+Field6AFActive = false
+Field7AFActive = false
+Field8AFActive = false
+Field9AFActive = false
+Field10AFActive = false
+Field11AFActive = false
+Field12AFActive = false
+Field13AFActive = false
+Field14AFActive = false
+
+-- Instances:
+local BeeS = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local FarmingSite = Instance.new("TextButton")
+local FarmingSiteF = Instance.new("Frame")
+local FarmingSF = Instance.new("ScrollingFrame")
+local SunflowerField = Instance.new("TextButton")
+local Field1AF = Instance.new("TextButton")
+local MushRoomField = Instance.new("TextButton")
+local Field2AF = Instance.new("TextButton")
+local DandelionField = Instance.new("TextButton")
+local Field3AF = Instance.new("TextButton")
+local BlueField = Instance.new("TextButton")
+local Field4AF = Instance.new("TextButton")
+local CloverField = Instance.new("TextButton")
+local Field5AF = Instance.new("TextButton")
+local StrawBerryField = Instance.new("TextButton")
+local Field6AF = Instance.new("TextButton")
+local SpiderField = Instance.new("TextButton")
+local Field7AF = Instance.new("TextButton")
+local BamBooField = Instance.new("TextButton")
+local Field8AF = Instance.new("TextButton")
+local RoseField = Instance.new("TextButton")
+local Field9AF = Instance.new("TextButton")
+local PineTreeField = Instance.new("TextButton")
+local Field10AF = Instance.new("TextButton")
+local CactusField = Instance.new("TextButton")
+local Field11AF = Instance.new("TextButton")
+local PumpkinField = Instance.new("TextButton")
+local Field12AF = Instance.new("TextButton")
+local PineappleField = Instance.new("TextButton")
+local Field13AF = Instance.new("TextButton")
+local MountainTopField = Instance.new("TextButton")
+local Field14AF = Instance.new("TextButton")
+local AutoDig = Instance.new("TextButton")
+local CollectallTreasures = Instance.new("TextButton")
+local ReturntoHive = Instance.new("TextButton")
+local GetAnyBees = Instance.new("TextButton")
+local Info = Instance.new("TextButton")
+local Creditss = Instance.new("TextLabel")
+local Locaiton = Instance.new("TextButton")
+local LocationF = Instance.new("Frame")
+local LocationSF = Instance.new("ScrollingFrame")
+local BlackBear = Instance.new("TextButton")
+local BrownBear = Instance.new("TextButton")
+local PandaBear = Instance.new("TextButton")
+local PolarBear = Instance.new("TextButton")
+local ScienceBear = Instance.new("TextButton")
+local TravelingBear = Instance.new("TextButton")
+local MotherBear = Instance.new("TextButton")
+local TunnelBear = Instance.new("TextButton")
+local SunBear = Instance.new("TextButton")
+local Onett = Instance.new("TextButton")
+local RedBoost = Instance.new("TextButton")
+local BlueBoost = Instance.new("TextButton")
+local MountainBoost = Instance.new("TextButton")
+local RedCannon = Instance.new("TextButton")
+local YellowCannon = Instance.new("TextButton")
+local BlueCannon = Instance.new("TextButton")
+local AntChallenge = Instance.new("TextButton")
+local Slingshot = Instance.new("TextButton")
+local BeeShop = Instance.new("TextButton")
+local KingbeetlesLair = Instance.new("TextButton")
+local AdvancedToolsShop = Instance.new("TextButton")
+local BasicToolsShop = Instance.new("TextButton")
+local TentShop = Instance.new("TextButton")
+local MountainTopShop = Instance.new("TextButton")
+local BlueClubhouse = Instance.new("TextButton")
+local RedClubhouse = Instance.new("TextButton")
+local TreatShop = Instance.new("TextButton")
+local ClubHoney = Instance.new("TextButton")
+local TicketShop = Instance.new("TextButton")
+local TicketRoyalJelly = Instance.new("TextButton")
+local RoyalJellyShop = Instance.new("TextButton")
+local HoneyConvertor = Instance.new("TextButton")
+local BlueberryDispenser = Instance.new("TextButton")
+local GumdropDispenser = Instance.new("TextButton")
+local TreatDispenser = Instance.new("TextButton")
+local StrawberryDispenser = Instance.new("TextButton")
+local SproutDispenser = Instance.new("TextButton")
+local Honeystorm = Instance.new("TextButton")
+local Title = Instance.new("TextLabel")
+local PollenFarm = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+--Properties:
+BeeS.Name = "BeeS"
+BeeS.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = BeeS
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.new(0.156863, 0.345098, 0.611765)
+Frame.BorderSizePixel = 5
+Frame.Position = UDim2.new(0.35132575, 0, 0.213147417, 0)
+Frame.Size = UDim2.new(0, 297, 0, 288)
+Frame.Draggable = true
+
+FarmingSite.Name = "Farming Site"
+FarmingSite.Parent = Frame
+FarmingSite.BackgroundColor3 = Color3.new(0.603922, 0, 0.603922)
+FarmingSite.BorderSizePixel = 3
+FarmingSite.Position = UDim2.new(0.538720489, 0, 0.218749985, 0)
+FarmingSite.Size = UDim2.new(0, 129, 0, 36)
+FarmingSite.Font = Enum.Font.Cartoon
+FarmingSite.Text = "Farming Site"
+FarmingSite.TextColor3 = Color3.new(0, 0, 0)
+FarmingSite.TextSize = 14
+
+FarmingSiteF.Name = "Farming SiteF"
+FarmingSiteF.Parent = FarmingSite
+FarmingSiteF.BackgroundColor3 = Color3.new(1, 1, 1)
+FarmingSiteF.BackgroundTransparency = 1
+FarmingSiteF.Position = UDim2.new(1.1937983, 0, -1.75000083, 0)
+FarmingSiteF.Size = UDim2.new(0, 231, 0, 288)
+FarmingSiteF.Visible = false
+
+FarmingSF.Name = "Farming SF"
+FarmingSF.Parent = FarmingSiteF
+FarmingSF.BackgroundColor3 = Color3.new(0, 0, 0)
+FarmingSF.BorderSizePixel = 3
+FarmingSF.Position = UDim2.new(0.103896104, 0, 0, 0)
+FarmingSF.Size = UDim2.new(0, 225, 0, 321)
+
+SunflowerField.Name = "Sunflower Field"
+SunflowerField.Parent = FarmingSF
+SunflowerField.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+SunflowerField.Position = UDim2.new(0.0391061455, 0, 0.024305556, 0)
+SunflowerField.Size = UDim2.new(0, 92, 0, 29)
+SunflowerField.Font = Enum.Font.SourceSans
+SunflowerField.Text = "Sunflower Field"
+SunflowerField.TextColor3 = Color3.new(0, 0, 0)
+SunflowerField.TextSize = 14
+
+Field1AF.Name = "Field1AF"
+Field1AF.Parent = SunflowerField
+Field1AF.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+Field1AF.Position = UDim2.new(1.18478262, 0, 0, 0)
+Field1AF.Size = UDim2.new(0, 91, 0, 29)
+Field1AF.Font = Enum.Font.SourceSans
+Field1AF.Text = "Farm"
+Field1AF.TextColor3 = Color3.new(0, 0, 0)
+Field1AF.TextSize = 14
+
+MushRoomField.Name = "MushRoom Field"
+MushRoomField.Parent = FarmingSF
+MushRoomField.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+MushRoomField.Position = UDim2.new(0.0391061455, 0, 0.0920138881, 0)
+MushRoomField.Size = UDim2.new(0, 92, 0, 29)
+MushRoomField.Font = Enum.Font.SourceSans
+MushRoomField.Text = "MushRoom Field"
+MushRoomField.TextColor3 = Color3.new(0, 0, 0)
+MushRoomField.TextSize = 14
+
+Field2AF.Name = "Field2AF"
+Field2AF.Parent = MushRoomField
+Field2AF.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+Field2AF.Position = UDim2.new(1.18478262, 0, 0, 0)
+Field2AF.Size = UDim2.new(0, 91, 0, 29)
+Field2AF.Font = Enum.Font.SourceSans
+Field2AF.Text = "Farm"
+Field2AF.TextColor3 = Color3.new(0, 0, 0)
+Field2AF.TextSize = 14
+
+DandelionField.Name = "Dandelion Field"
+DandelionField.Parent = FarmingSF
+DandelionField.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+DandelionField.Position = UDim2.new(0.0391061455, 0, 0.159722224, 0)
+DandelionField.Size = UDim2.new(0, 92, 0, 29)
+DandelionField.Font = Enum.Font.SourceSans
+DandelionField.Text = "Dandelion Field"
+DandelionField.TextColor3 = Color3.new(0, 0, 0)
+DandelionField.TextSize = 14
+
+Field3AF.Name = "Field3AF"
+Field3AF.Parent = DandelionField
+Field3AF.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+Field3AF.Position = UDim2.new(1.18478262, 0, 0, 0)
+Field3AF.Size = UDim2.new(0, 91, 0, 29)
+Field3AF.Font = Enum.Font.SourceSans
+Field3AF.Text = "Farm"
+Field3AF.TextColor3 = Color3.new(0, 0, 0)
+Field3AF.TextSize = 14
+
+BlueField.Name = "Blue Field"
+BlueField.Parent = FarmingSF
+BlueField.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+BlueField.Position = UDim2.new(0.0391061455, 0, 0.223958328, 0)
+BlueField.Size = UDim2.new(0, 92, 0, 29)
+BlueField.Font = Enum.Font.SourceSans
+BlueField.Text = "Blue Field"
+BlueField.TextColor3 = Color3.new(0, 0, 0)
+BlueField.TextSize = 14
+
+Field4AF.Name = "Field4AF"
+Field4AF.Parent = BlueField
+Field4AF.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+Field4AF.Position = UDim2.new(1.18478262, 0, 0, 0)
+Field4AF.Size = UDim2.new(0, 91, 0, 29)
+Field4AF.Font = Enum.Font.SourceSans
+Field4AF.Text = "Farm"
+Field4AF.TextColor3 = Color3.new(0, 0, 0)
+Field4AF.TextSize = 14
+
+CloverField.Name = "Clover Field"
+CloverField.Parent = FarmingSF
+CloverField.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+CloverField.Position = UDim2.new(0.0391061455, 0, 0.288194448, 0)
+CloverField.Size = UDim2.new(0, 92, 0, 29)
+CloverField.Font = Enum.Font.SourceSans
+CloverField.Text = "Clover Field"
+CloverField.TextColor3 = Color3.new(0, 0, 0)
+CloverField.TextSize = 14
+
+Field5AF.Name = "Field5AF"
+Field5AF.Parent = CloverField
+Field5AF.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+Field5AF.Position = UDim2.new(1.18478262, 0, 0, 0)
+Field5AF.Size = UDim2.new(0, 91, 0, 29)
+Field5AF.Font = Enum.Font.SourceSans
+Field5AF.Text = "Farm"
+Field5AF.TextColor3 = Color3.new(0, 0, 0)
+Field5AF.TextSize = 14
+
+StrawBerryField.Name = "StrawBerry Field"
+StrawBerryField.Parent = FarmingSF
+StrawBerryField.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+StrawBerryField.Position = UDim2.new(0.0391061455, 0, 0.352430552, 0)
+StrawBerryField.Size = UDim2.new(0, 92, 0, 29)
+StrawBerryField.Font = Enum.Font.SourceSans
+StrawBerryField.Text = "StrawBerry Field"
+StrawBerryField.TextColor3 = Color3.new(0, 0, 0)
+StrawBerryField.TextSize = 14
+
+Field6AF.Name = "Field6AF"
+Field6AF.Parent = StrawBerryField
+Field6AF.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+Field6AF.Position = UDim2.new(1.18478262, 0, 0, 0)
+Field6AF.Size = UDim2.new(0, 91, 0, 29)
+Field6AF.Font = Enum.Font.SourceSans
+Field6AF.Text = "Farm"
+Field6AF.TextColor3 = Color3.new(0, 0, 0)
+Field6AF.TextSize = 14
+
+SpiderField.Name = "Spider Field"
+SpiderField.Parent = FarmingSF
+SpiderField.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+SpiderField.Position = UDim2.new(0.0391061455, 0, 0.418402791, 0)
+SpiderField.Size = UDim2.new(0, 92, 0, 29)
+SpiderField.Font = Enum.Font.SourceSans
+SpiderField.Text = "Spider Field"
+SpiderField.TextColor3 = Color3.new(0, 0, 0)
+SpiderField.TextSize = 14
+
+Field7AF.Name = "Field7AF"
+Field7AF.Parent = SpiderField
+Field7AF.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+Field7AF.Position = UDim2.new(1.18478262, 0, 0, 0)
+Field7AF.Size = UDim2.new(0, 91, 0, 29)
+Field7AF.Font = Enum.Font.SourceSans
+Field7AF.Text = "Farm"
+Field7AF.TextColor3 = Color3.new(0, 0, 0)
+Field7AF.TextSize = 14
+
+BamBooField.Name = "BamBoo Field"
+BamBooField.Parent = FarmingSF
+BamBooField.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+BamBooField.Position = UDim2.new(0.0391061455, 0, 0.484375, 0)
+BamBooField.Size = UDim2.new(0, 92, 0, 29)
+BamBooField.Font = Enum.Font.SourceSans
+BamBooField.Text = "Bamboo Field"
+BamBooField.TextColor3 = Color3.new(0, 0, 0)
+BamBooField.TextSize = 14
+
+Field8AF.Name = "Field8AF"
+Field8AF.Parent = BamBooField
+Field8AF.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+Field8AF.Position = UDim2.new(1.18478262, 0, 0, 0)
+Field8AF.Size = UDim2.new(0, 91, 0, 29)
+Field8AF.Font = Enum.Font.SourceSans
+Field8AF.Text = "Farm"
+Field8AF.TextColor3 = Color3.new(0, 0, 0)
+Field8AF.TextSize = 14
+
+RoseField.Name = "Rose Field"
+RoseField.Parent = FarmingSF
+RoseField.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+RoseField.Position = UDim2.new(0.0391061455, 0, 0.546875, 0)
+RoseField.Size = UDim2.new(0, 92, 0, 29)
+RoseField.Font = Enum.Font.SourceSans
+RoseField.Text = "Rose Field"
+RoseField.TextColor3 = Color3.new(0, 0, 0)
+RoseField.TextSize = 14
+
+Field9AF.Name = "Field9AF"
+Field9AF.Parent = RoseField
+Field9AF.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+Field9AF.Position = UDim2.new(1.18478262, 0, 0, 0)
+Field9AF.Size = UDim2.new(0, 91, 0, 29)
+Field9AF.Font = Enum.Font.SourceSans
+Field9AF.Text = "Farm"
+Field9AF.TextColor3 = Color3.new(0, 0, 0)
+Field9AF.TextSize = 14
+
+PineTreeField.Name = "PineTree Field"
+PineTreeField.Parent = FarmingSF
+PineTreeField.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+PineTreeField.Position = UDim2.new(0.0391061306, 0, 0.612847209, 0)
+PineTreeField.Size = UDim2.new(0, 92, 0, 29)
+PineTreeField.Font = Enum.Font.SourceSans
+PineTreeField.Text = "PineTree Field"
+PineTreeField.TextColor3 = Color3.new(0, 0, 0)
+PineTreeField.TextSize = 14
+
+Field10AF.Name = "Field10AF"
+Field10AF.Parent = PineTreeField
+Field10AF.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+Field10AF.Position = UDim2.new(1.18478262, 0, 0, 0)
+Field10AF.Size = UDim2.new(0, 91, 0, 29)
+Field10AF.Font = Enum.Font.SourceSans
+Field10AF.Text = "Farm"
+Field10AF.TextColor3 = Color3.new(0, 0, 0)
+Field10AF.TextSize = 14
+
+CactusField.Name = "Cactus Field"
+CactusField.Parent = FarmingSF
+CactusField.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+CactusField.Position = UDim2.new(0.0391061455, 0, 0.675347209, 0)
+CactusField.Size = UDim2.new(0, 92, 0, 29)
+CactusField.Font = Enum.Font.SourceSans
+CactusField.Text = "Cactus Field"
+CactusField.TextColor3 = Color3.new(0, 0, 0)
+CactusField.TextSize = 14
+
+Field11AF.Name = "Field11AF"
+Field11AF.Parent = CactusField
+Field11AF.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+Field11AF.Position = UDim2.new(1.18478262, 0, 0, 0)
+Field11AF.Size = UDim2.new(0, 91, 0, 29)
+Field11AF.Font = Enum.Font.SourceSans
+Field11AF.Text = "Farm"
+Field11AF.TextColor3 = Color3.new(0, 0, 0)
+Field11AF.TextSize = 14
+
+PumpkinField.Name = "Pumpkin Field"
+PumpkinField.Parent = FarmingSF
+PumpkinField.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+PumpkinField.Position = UDim2.new(0.0391061455, 0, 0.737847209, 0)
+PumpkinField.Size = UDim2.new(0, 92, 0, 29)
+PumpkinField.Font = Enum.Font.SourceSans
+PumpkinField.Text = "Pumpkin Field"
+PumpkinField.TextColor3 = Color3.new(0, 0, 0)
+PumpkinField.TextSize = 14
+
+Field12AF.Name = "Field12AF"
+Field12AF.Parent = PumpkinField
+Field12AF.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+Field12AF.Position = UDim2.new(1.18478262, 0, 0, 0)
+Field12AF.Size = UDim2.new(0, 91, 0, 29)
+Field12AF.Font = Enum.Font.SourceSans
+Field12AF.Text = "Farm"
+Field12AF.TextColor3 = Color3.new(0, 0, 0)
+Field12AF.TextSize = 14
+
+PineappleField.Name = "Pineapple Field"
+PineappleField.Parent = FarmingSF
+PineappleField.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+PineappleField.Position = UDim2.new(0.0391061455, 0, 0.798611104, 0)
+PineappleField.Size = UDim2.new(0, 92, 0, 29)
+PineappleField.Font = Enum.Font.SourceSans
+PineappleField.Text = "Pineapple Field"
+PineappleField.TextColor3 = Color3.new(0, 0, 0)
+PineappleField.TextSize = 14
+
+Field13AF.Name = "Field13AF"
+Field13AF.Parent = PineappleField
+Field13AF.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+Field13AF.Position = UDim2.new(1.18478262, 0, 0, 0)
+Field13AF.Size = UDim2.new(0, 91, 0, 29)
+Field13AF.Font = Enum.Font.SourceSans
+Field13AF.Text = "Farm"
+Field13AF.TextColor3 = Color3.new(0, 0, 0)
+Field13AF.TextSize = 14
+
+MountainTopField.Name = "MountainTop Field"
+MountainTopField.Parent = FarmingSF
+MountainTopField.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+MountainTopField.Position = UDim2.new(0.0391061455, 0, 0.859375, 0)
+MountainTopField.Size = UDim2.new(0, 92, 0, 29)
+MountainTopField.Font = Enum.Font.SourceSans
+MountainTopField.Text = "MountainTop Field"
+MountainTopField.TextColor3 = Color3.new(0, 0, 0)
+MountainTopField.TextSize = 14
+
+Field14AF.Name = "Field14AF"
+Field14AF.Parent = MountainTopField
+Field14AF.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+Field14AF.Position = UDim2.new(1.18478262, 0, 0, 0)
+Field14AF.Size = UDim2.new(0, 91, 0, 29)
+Field14AF.Font = Enum.Font.SourceSans
+Field14AF.Text = "Farm"
+Field14AF.TextColor3 = Color3.new(0, 0, 0)
+Field14AF.TextSize = 14
+
+AutoDig.Name = "Auto Dig"
+AutoDig.Parent = Frame
+AutoDig.BackgroundColor3 = Color3.new(0.603922, 0, 0.603922)
+AutoDig.BorderSizePixel = 3
+AutoDig.Position = UDim2.new(0.0404040404, 0, 0.218749985, 0)
+AutoDig.Size = UDim2.new(0, 129, 0, 36)
+AutoDig.Font = Enum.Font.Cartoon
+AutoDig.Text = "Auto Dig"
+AutoDig.TextColor3 = Color3.new(0, 0, 0)
+AutoDig.TextSize = 14
+
+CollectallTreasures.Name = "Collect all Treasures"
+CollectallTreasures.Parent = Frame
+CollectallTreasures.BackgroundColor3 = Color3.new(0.603922, 0, 0.603922)
+CollectallTreasures.BorderSizePixel = 3
+CollectallTreasures.Position = UDim2.new(0.538720489, 0, 0.53125, 0)
+CollectallTreasures.Size = UDim2.new(0, 129, 0, 36)
+CollectallTreasures.Font = Enum.Font.Cartoon
+CollectallTreasures.Text = "Collect all Treasures"
+CollectallTreasures.TextColor3 = Color3.new(0, 0, 0)
+CollectallTreasures.TextSize = 14
+
+ReturntoHive.Name = "Return to Hive"
+ReturntoHive.Parent = Frame
+ReturntoHive.BackgroundColor3 = Color3.new(0.603922, 0, 0.603922)
+ReturntoHive.BorderSizePixel = 3
+ReturntoHive.Position = UDim2.new(0.0404040217, 0, 0.368055552, 0)
+ReturntoHive.Size = UDim2.new(0, 129, 0, 36)
+ReturntoHive.Font = Enum.Font.Cartoon
+ReturntoHive.Text = "Return to Hive"
+ReturntoHive.TextColor3 = Color3.new(0, 0, 0)
+ReturntoHive.TextSize = 14
+
+GetAnyBees.Name = "Get Any Bees"
+GetAnyBees.Parent = Frame
+GetAnyBees.BackgroundColor3 = Color3.new(0.603922, 0, 0.603922)
+GetAnyBees.BorderSizePixel = 3
+GetAnyBees.Position = UDim2.new(0.538720489, 0, 0.368055552, 0)
+GetAnyBees.Size = UDim2.new(0, 129, 0, 36)
+GetAnyBees.Font = Enum.Font.Cartoon
+GetAnyBees.Text = "Get Any Bees"
+GetAnyBees.TextColor3 = Color3.new(0, 0, 0)
+GetAnyBees.TextSize = 14
+
+Info.Name = "Info"
+Info.Parent = Frame
+Info.BackgroundColor3 = Color3.new(0.603922, 0, 0.603922)
+Info.BorderSizePixel = 3
+Info.Position = UDim2.new(0.282828242, 0, 0.87499994, 0)
+Info.Size = UDim2.new(0, 129, 0, 36)
+Info.Font = Enum.Font.SourceSans
+Info.Text = "Credits"
+Info.TextColor3 = Color3.new(0, 0, 0)
+Info.TextSize = 14
+
+Creditss.Name = "Creditss"
+Creditss.Parent = Info
+Creditss.BackgroundColor3 = Color3.new(0.501961, 0, 0)
+Creditss.BorderColor3 = Color3.new(0, 0, 0)
+Creditss.BorderSizePixel = 4
+Creditss.Position = UDim2.new(-0.713178277, 0, 1.27777779, 0)
+Creditss.Size = UDim2.new(0, 316, 0, 127)
+Creditss.Font = Enum.Font.Cartoon
+Creditss.Text = "Gui by Tokumei/Aresuu, Special Thanks for Scripts Owners that i used for this Gui ! discord.gg/invites/PCVJQF8"
+Creditss.TextColor3 = Color3.new(0.498039, 0.498039, 0.498039)
+Creditss.TextScaled = true
+Creditss.TextSize = 14
+Creditss.TextWrapped = true
+Creditss.Visible = false
+
+Locaiton.Name = "Locaiton"
+Locaiton.Parent = Frame
+Locaiton.BackgroundColor3 = Color3.new(0.603922, 0, 0.603922)
+Locaiton.BorderSizePixel = 3
+Locaiton.Position = UDim2.new(0.0404039919, 0, 0.53125, 0)
+Locaiton.Size = UDim2.new(0, 129, 0, 36)
+Locaiton.Font = Enum.Font.Cartoon
+Locaiton.Text = "Location"
+Locaiton.TextColor3 = Color3.new(0, 0, 0)
+Locaiton.TextSize = 14
+
+LocationF.Name = "LocationF"
+LocationF.Parent = Locaiton
+LocationF.BackgroundColor3 = Color3.new(1, 1, 1)
+LocationF.BackgroundTransparency = 1
+LocationF.Position = UDim2.new(-2.10077524, 0, -4.27777767, 0)
+LocationF.Size = UDim2.new(0, 231, 0, 322)
+LocationF.Visible = false
+
+LocationSF.Name = "LocationSF"
+LocationSF.Parent = LocationF
+LocationSF.BackgroundColor3 = Color3.new(0, 0, 0)
+LocationSF.BorderSizePixel = 3
+LocationSF.Position = UDim2.new(0.00432900432, 0, 0.00310559012, 0)
+LocationSF.Size = UDim2.new(0, 224, 0, 321)
+
+BlackBear.Name = "BlackBear"
+BlackBear.Parent = LocationSF
+BlackBear.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+BlackBear.Position = UDim2.new(0.0391061455, 0, 0.0104166716, 0)
+BlackBear.Size = UDim2.new(0, 92, 0, 29)
+BlackBear.Font = Enum.Font.Cartoon
+BlackBear.Text = "Black Bear"
+BlackBear.TextColor3 = Color3.new(0, 0, 0)
+BlackBear.TextScaled = true
+BlackBear.TextSize = 14
+BlackBear.TextWrapped = true
+
+BrownBear.Name = "BrownBear"
+BrownBear.Parent = LocationSF
+BrownBear.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+BrownBear.Position = UDim2.new(0.51910615, 0, 0.0104166716, 0)
+BrownBear.Size = UDim2.new(0, 92, 0, 29)
+BrownBear.Font = Enum.Font.Cartoon
+BrownBear.Text = "Brown Bear"
+BrownBear.TextColor3 = Color3.new(0, 0, 0)
+BrownBear.TextScaled = true
+BrownBear.TextSize = 14
+BrownBear.TextWrapped = true
+
+PandaBear.Name = "PandaBear"
+PandaBear.Parent = LocationSF
+PandaBear.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+PandaBear.Position = UDim2.new(0.0391061455, 0, 0.0561054945, 0)
+PandaBear.Size = UDim2.new(0, 92, 0, 29)
+PandaBear.Font = Enum.Font.Cartoon
+PandaBear.Text = "Panda Bear"
+PandaBear.TextColor3 = Color3.new(0, 0, 0)
+PandaBear.TextScaled = true
+PandaBear.TextSize = 14
+PandaBear.TextWrapped = true
+
+PolarBear.Name = "PolarBear"
+PolarBear.Parent = LocationSF
+PolarBear.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+PolarBear.Position = UDim2.new(0.51910609, 0, 0.0545527004, 0)
+PolarBear.Size = UDim2.new(0, 92, 0, 29)
+PolarBear.Font = Enum.Font.Cartoon
+PolarBear.Text = "Polar Bear"
+PolarBear.TextColor3 = Color3.new(0, 0, 0)
+PolarBear.TextScaled = true
+PolarBear.TextSize = 14
+PolarBear.TextWrapped = true
+
+ScienceBear.Name = "ScienceBear"
+ScienceBear.Parent = LocationSF
+ScienceBear.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+ScienceBear.Position = UDim2.new(0.0391061455, 0, 0.0986887515, 0)
+ScienceBear.Size = UDim2.new(0, 92, 0, 29)
+ScienceBear.Font = Enum.Font.SourceSans
+ScienceBear.Text = "Science Bear"
+ScienceBear.TextColor3 = Color3.new(0, 0, 0)
+ScienceBear.TextScaled = true
+ScienceBear.TextSize = 14
+ScienceBear.TextWrapped = true
+
+TravelingBear.Name = "TravelingBear"
+TravelingBear.Parent = LocationSF
+TravelingBear.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+TravelingBear.Position = UDim2.new(0.51910615, 0, 0.100241542, 0)
+TravelingBear.Size = UDim2.new(0, 92, 0, 29)
+TravelingBear.Font = Enum.Font.Cartoon
+TravelingBear.Text = "Traveling Bear"
+TravelingBear.TextColor3 = Color3.new(0, 0, 0)
+TravelingBear.TextScaled = true
+TravelingBear.TextSize = 14
+TravelingBear.TextWrapped = true
+
+MotherBear.Name = "MotherBear"
+MotherBear.Parent = LocationSF
+MotherBear.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+MotherBear.Position = UDim2.new(0.0391061455, 0, 0.14593035, 0)
+MotherBear.Size = UDim2.new(0, 92, 0, 29)
+MotherBear.Font = Enum.Font.Cartoon
+MotherBear.Text = "Mother Bear"
+MotherBear.TextColor3 = Color3.new(0, 0, 0)
+MotherBear.TextScaled = true
+MotherBear.TextSize = 14
+MotherBear.TextWrapped = true
+
+TunnelBear.Name = "TunnelBear"
+TunnelBear.Parent = LocationSF
+TunnelBear.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+TunnelBear.Position = UDim2.new(0.51910615, 0, 0.14593038, 0)
+TunnelBear.Size = UDim2.new(0, 92, 0, 29)
+TunnelBear.Font = Enum.Font.Cartoon
+TunnelBear.Text = "Tunnel Bear"
+TunnelBear.TextColor3 = Color3.new(0, 0, 0)
+TunnelBear.TextScaled = true
+TunnelBear.TextSize = 14
+TunnelBear.TextWrapped = true
+
+SunBear.Name = "SunBear"
+SunBear.Parent = LocationSF
+SunBear.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+SunBear.Position = UDim2.new(0.0391061455, 0, 0.191619232, 0)
+SunBear.Size = UDim2.new(0, 92, 0, 29)
+SunBear.Font = Enum.Font.Cartoon
+SunBear.Text = "Sun Bear"
+SunBear.TextColor3 = Color3.new(0, 0, 0)
+SunBear.TextScaled = true
+SunBear.TextSize = 14
+SunBear.TextWrapped = true
+
+Onett.Name = "Onett"
+Onett.Parent = LocationSF
+Onett.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+Onett.Position = UDim2.new(0.51910615, 0, 0.190066457, 0)
+Onett.Size = UDim2.new(0, 92, 0, 29)
+Onett.Font = Enum.Font.Cartoon
+Onett.Text = "Onett"
+Onett.TextColor3 = Color3.new(0, 0, 0)
+Onett.TextScaled = true
+Onett.TextSize = 14
+Onett.TextWrapped = true
+
+RedBoost.Name = "RedBoost"
+RedBoost.Parent = LocationSF
+RedBoost.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+RedBoost.Position = UDim2.new(0.0391061455, 0, 0.234202474, 0)
+RedBoost.Size = UDim2.new(0, 92, 0, 29)
+RedBoost.Font = Enum.Font.Cartoon
+RedBoost.Text = "Red Boost"
+RedBoost.TextColor3 = Color3.new(0, 0, 0)
+RedBoost.TextScaled = true
+RedBoost.TextSize = 14
+RedBoost.TextWrapped = true
+
+BlueBoost.Name = "BlueBoost"
+BlueBoost.Parent = LocationSF
+BlueBoost.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+BlueBoost.Position = UDim2.new(0.51910615, 0, 0.23575528, 0)
+BlueBoost.Size = UDim2.new(0, 92, 0, 29)
+BlueBoost.Font = Enum.Font.Cartoon
+BlueBoost.Text = "Blue Boost"
+BlueBoost.TextColor3 = Color3.new(0, 0, 0)
+BlueBoost.TextSize = 14
+
+MountainBoost.Name = "MountainBoost"
+MountainBoost.Parent = LocationSF
+MountainBoost.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+MountainBoost.Position = UDim2.new(0.0391061455, 0, 0.281077445, 0)
+MountainBoost.Size = UDim2.new(0, 92, 0, 29)
+MountainBoost.Font = Enum.Font.Cartoon
+MountainBoost.Text = "Mountain Boost"
+MountainBoost.TextColor3 = Color3.new(0, 0, 0)
+MountainBoost.TextSize = 14
+
+RedCannon.Name = "RedCannon"
+RedCannon.Parent = LocationSF
+RedCannon.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+RedCannon.Position = UDim2.new(0.0390000008, 0, 0.326419145, 0)
+RedCannon.Size = UDim2.new(0, 92, 0, 29)
+RedCannon.Font = Enum.Font.Cartoon
+RedCannon.Text = "Red Cannon"
+RedCannon.TextColor3 = Color3.new(0, 0, 0)
+RedCannon.TextScaled = true
+RedCannon.TextSize = 14
+RedCannon.TextWrapped = true
+
+YellowCannon.Name = "YellowCannon"
+YellowCannon.Parent = LocationSF
+YellowCannon.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+YellowCannon.Position = UDim2.new(0.0390000008, 0, 0.370624572, 0)
+YellowCannon.Size = UDim2.new(0, 92, 0, 29)
+YellowCannon.Font = Enum.Font.Cartoon
+YellowCannon.Text = "MountainTop Field"
+YellowCannon.TextColor3 = Color3.new(0, 0, 0)
+YellowCannon.TextScaled = true
+YellowCannon.TextSize = 14
+YellowCannon.TextWrapped = true
+
+BlueCannon.Name = "BlueCannon"
+BlueCannon.Parent = LocationSF
+BlueCannon.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+BlueCannon.Position = UDim2.new(0.51910615, 0, 0.281077504, 0)
+BlueCannon.Size = UDim2.new(0, 92, 0, 29)
+BlueCannon.Font = Enum.Font.Cartoon
+BlueCannon.Text = "Blue Cannon"
+BlueCannon.TextColor3 = Color3.new(0, 0, 0)
+BlueCannon.TextScaled = true
+BlueCannon.TextSize = 14
+BlueCannon.TextWrapped = true
+
+AntChallenge.Name = "AntChallenge"
+AntChallenge.Parent = LocationSF
+AntChallenge.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+AntChallenge.Position = UDim2.new(0.0390000008, 0, 0.416119009, 0)
+AntChallenge.Size = UDim2.new(0, 92, 0, 29)
+AntChallenge.Font = Enum.Font.Cartoon
+AntChallenge.Text = "Ant Challenge"
+AntChallenge.TextColor3 = Color3.new(0, 0, 0)
+AntChallenge.TextScaled = true
+AntChallenge.TextSize = 14
+AntChallenge.TextWrapped = true
+
+Slingshot.Name = "Slingshot"
+Slingshot.Parent = LocationSF
+Slingshot.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+Slingshot.Position = UDim2.new(0.51910615, 0, 0.326766342, 0)
+Slingshot.Size = UDim2.new(0, 92, 0, 29)
+Slingshot.Font = Enum.Font.Cartoon
+Slingshot.Text = "Sling Shot"
+Slingshot.TextColor3 = Color3.new(0, 0, 0)
+Slingshot.TextScaled = true
+Slingshot.TextSize = 14
+Slingshot.TextWrapped = true
+
+BeeShop.Name = "BeeShop"
+BeeShop.Parent = LocationSF
+BeeShop.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+BeeShop.Position = UDim2.new(0.0391061455, 0, 0.460727185, 0)
+BeeShop.Size = UDim2.new(0, 92, 0, 29)
+BeeShop.Font = Enum.Font.Cartoon
+BeeShop.Text = "Bee Shop"
+BeeShop.TextColor3 = Color3.new(0, 0, 0)
+BeeShop.TextScaled = true
+BeeShop.TextSize = 14
+BeeShop.TextWrapped = true
+
+KingbeetlesLair.Name = "KingbeetlesLair"
+KingbeetlesLair.Parent = LocationSF
+KingbeetlesLair.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+KingbeetlesLair.Position = UDim2.new(0.51910615, 0, 0.370902359, 0)
+KingbeetlesLair.Size = UDim2.new(0, 92, 0, 29)
+KingbeetlesLair.Font = Enum.Font.Cartoon
+KingbeetlesLair.Text = "King Beetles Lair"
+KingbeetlesLair.TextColor3 = Color3.new(0, 0, 0)
+KingbeetlesLair.TextScaled = true
+KingbeetlesLair.TextSize = 14
+KingbeetlesLair.TextWrapped = true
+
+AdvancedToolsShop.Name = "Advanced Tools Shop"
+AdvancedToolsShop.Parent = LocationSF
+AdvancedToolsShop.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+AdvancedToolsShop.Position = UDim2.new(0.0390000008, 0, 0.506457746, 0)
+AdvancedToolsShop.Size = UDim2.new(0, 92, 0, 29)
+AdvancedToolsShop.Font = Enum.Font.Cartoon
+AdvancedToolsShop.Text = "Advanced Tools Shop"
+AdvancedToolsShop.TextColor3 = Color3.new(0, 0, 0)
+AdvancedToolsShop.TextScaled = true
+AdvancedToolsShop.TextSize = 14
+AdvancedToolsShop.TextWrapped = true
+
+BasicToolsShop.Name = "Basic Tools Shop"
+BasicToolsShop.Parent = LocationSF
+BasicToolsShop.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+BasicToolsShop.Position = UDim2.new(0.518999994, 0, 0.416119009, 0)
+BasicToolsShop.Size = UDim2.new(0, 92, 0, 29)
+BasicToolsShop.Font = Enum.Font.Cartoon
+BasicToolsShop.Text = "Basic Tools Shop"
+BasicToolsShop.TextColor3 = Color3.new(0, 0, 0)
+BasicToolsShop.TextScaled = true
+BasicToolsShop.TextSize = 14
+BasicToolsShop.TextWrapped = true
+
+TentShop.Name = "TentShop"
+TentShop.Parent = LocationSF
+TentShop.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+TentShop.Position = UDim2.new(0.0390000008, 0, 0.550982714, 0)
+TentShop.Size = UDim2.new(0, 92, 0, 29)
+TentShop.Font = Enum.Font.Cartoon
+TentShop.Text = "Tent Shop"
+TentShop.TextColor3 = Color3.new(0, 0, 0)
+TentShop.TextScaled = true
+TentShop.TextSize = 14
+TentShop.TextWrapped = true
+
+MountainTopShop.Name = "MountainTopShop"
+MountainTopShop.Parent = LocationSF
+MountainTopShop.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+MountainTopShop.Position = UDim2.new(0.51910615, 0, 0.460727185, 0)
+MountainTopShop.Size = UDim2.new(0, 92, 0, 29)
+MountainTopShop.Font = Enum.Font.Cartoon
+MountainTopShop.Text = "Mountain Top Shop"
+MountainTopShop.TextColor3 = Color3.new(0, 0, 0)
+MountainTopShop.TextScaled = true
+MountainTopShop.TextSize = 14
+MountainTopShop.TextWrapped = true
+
+BlueClubhouse.Name = "BlueClubhouse"
+BlueClubhouse.Parent = LocationSF
+BlueClubhouse.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+BlueClubhouse.Position = UDim2.new(0.51910615, 0, 0.55055213, 0)
+BlueClubhouse.Size = UDim2.new(0, 92, 0, 29)
+BlueClubhouse.Font = Enum.Font.Cartoon
+BlueClubhouse.Text = "Blue Club House"
+BlueClubhouse.TextColor3 = Color3.new(0, 0, 0)
+BlueClubhouse.TextScaled = true
+BlueClubhouse.TextSize = 14
+BlueClubhouse.TextWrapped = true
+
+RedClubhouse.Name = "RedClubhouse"
+RedClubhouse.Parent = LocationSF
+RedClubhouse.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+RedClubhouse.Position = UDim2.new(0.0390000008, 0, 0.596588194, 0)
+RedClubhouse.Size = UDim2.new(0, 92, 0, 29)
+RedClubhouse.Font = Enum.Font.Cartoon
+RedClubhouse.Text = "Red Club House"
+RedClubhouse.TextColor3 = Color3.new(0, 0, 0)
+RedClubhouse.TextScaled = true
+RedClubhouse.TextSize = 14
+RedClubhouse.TextWrapped = true
+
+TreatShop.Name = "TreatShop"
+TreatShop.Parent = LocationSF
+TreatShop.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+TreatShop.Position = UDim2.new(0.51910615, 0, 0.506416023, 0)
+TreatShop.Size = UDim2.new(0, 92, 0, 29)
+TreatShop.Font = Enum.Font.Cartoon
+TreatShop.Text = "Treat Shop"
+TreatShop.TextColor3 = Color3.new(0, 0, 0)
+TreatShop.TextScaled = true
+TreatShop.TextSize = 14
+TreatShop.TextWrapped = true
+
+ClubHoney.Name = "ClubHoney"
+ClubHoney.Parent = LocationSF
+ClubHoney.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+ClubHoney.Position = UDim2.new(0.0390000045, 0, 0.685662985, 0)
+ClubHoney.Size = UDim2.new(0, 92, 0, 29)
+ClubHoney.Font = Enum.Font.Cartoon
+ClubHoney.Text = "Club Honey"
+ClubHoney.TextColor3 = Color3.new(0, 0, 0)
+ClubHoney.TextScaled = true
+ClubHoney.TextSize = 14
+ClubHoney.TextWrapped = true
+
+TicketShop.Name = "TicketShop"
+TicketShop.Parent = LocationSF
+TicketShop.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+TicketShop.Position = UDim2.new(0.0391061455, 0, 0.640376985, 0)
+TicketShop.Size = UDim2.new(0, 92, 0, 29)
+TicketShop.Font = Enum.Font.Cartoon
+TicketShop.Text = "Ticket Shop"
+TicketShop.TextColor3 = Color3.new(0, 0, 0)
+TicketShop.TextScaled = true
+TicketShop.TextSize = 14
+TicketShop.TextWrapped = true
+
+TicketRoyalJelly.Name = "TicketRoyalJelly"
+TicketRoyalJelly.Parent = LocationSF
+TicketRoyalJelly.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+TicketRoyalJelly.Position = UDim2.new(0.0390000008, 0, 0.730213046, 0)
+TicketRoyalJelly.Size = UDim2.new(0, 92, 0, 29)
+TicketRoyalJelly.Font = Enum.Font.Cartoon
+TicketRoyalJelly.Text = "Ticket RoyalJelly Shop"
+TicketRoyalJelly.TextColor3 = Color3.new(0, 0, 0)
+TicketRoyalJelly.TextScaled = true
+TicketRoyalJelly.TextSize = 14
+TicketRoyalJelly.TextWrapped = true
+
+RoyalJellyShop.Name = "RoyalJellyShop"
+RoyalJellyShop.Parent = LocationSF
+RoyalJellyShop.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+RoyalJellyShop.Position = UDim2.new(0.51910615, 0, 0.596240997, 0)
+RoyalJellyShop.Size = UDim2.new(0, 92, 0, 29)
+RoyalJellyShop.Font = Enum.Font.Cartoon
+RoyalJellyShop.Text = "RoyalJelly Shop"
+RoyalJellyShop.TextColor3 = Color3.new(0, 0, 0)
+RoyalJellyShop.TextScaled = true
+RoyalJellyShop.TextSize = 14
+RoyalJellyShop.TextWrapped = true
+
+HoneyConvertor.Name = "HoneyConvertor"
+HoneyConvertor.Parent = LocationSF
+HoneyConvertor.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+HoneyConvertor.Position = UDim2.new(0.520011902, 0, 0.640152037, 0)
+HoneyConvertor.Size = UDim2.new(0, 92, 0, 29)
+HoneyConvertor.Font = Enum.Font.Cartoon
+HoneyConvertor.Text = "Honey Convertor"
+HoneyConvertor.TextColor3 = Color3.new(0, 0, 0)
+HoneyConvertor.TextScaled = true
+HoneyConvertor.TextSize = 14
+HoneyConvertor.TextWrapped = true
+
+BlueberryDispenser.Name = "BlueberryDispenser"
+BlueberryDispenser.Parent = LocationSF
+BlueberryDispenser.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+BlueberryDispenser.Position = UDim2.new(0.51910615, 0, 0.684513152, 0)
+BlueberryDispenser.Size = UDim2.new(0, 92, 0, 29)
+BlueberryDispenser.Font = Enum.Font.Cartoon
+BlueberryDispenser.Text = "Blueberry Dispenser"
+BlueberryDispenser.TextColor3 = Color3.new(0, 0, 0)
+BlueberryDispenser.TextScaled = true
+BlueberryDispenser.TextSize = 14
+BlueberryDispenser.TextWrapped = true
+
+GumdropDispenser.Name = "GumdropDispenser"
+GumdropDispenser.Parent = LocationSF
+GumdropDispenser.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+GumdropDispenser.Position = UDim2.new(0.0390000008, 0, 0.77566576, 0)
+GumdropDispenser.Size = UDim2.new(0, 92, 0, 29)
+GumdropDispenser.Font = Enum.Font.Cartoon
+GumdropDispenser.Text = "Gumdrop Dispenser"
+GumdropDispenser.TextColor3 = Color3.new(0, 0, 0)
+GumdropDispenser.TextScaled = true
+GumdropDispenser.TextSize = 14
+GumdropDispenser.TextWrapped = true
+
+TreatDispenser.Name = "TreatDispenser"
+TreatDispenser.Parent = LocationSF
+TreatDispenser.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+TreatDispenser.Position = UDim2.new(0.0390000008, 0, 0.81971854, 0)
+TreatDispenser.Size = UDim2.new(0, 92, 0, 29)
+TreatDispenser.Font = Enum.Font.Cartoon
+TreatDispenser.Text = "Treat Dispenser"
+TreatDispenser.TextColor3 = Color3.new(0, 0, 0)
+TreatDispenser.TextScaled = true
+TreatDispenser.TextSize = 14
+TreatDispenser.TextWrapped = true
+
+StrawberryDispenser.Name = "StrawberryDispenser"
+StrawberryDispenser.Parent = LocationSF
+StrawberryDispenser.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+StrawberryDispenser.Position = UDim2.new(0.51910615, 0, 0.730018556, 0)
+StrawberryDispenser.Size = UDim2.new(0, 92, 0, 29)
+StrawberryDispenser.Font = Enum.Font.Cartoon
+StrawberryDispenser.Text = "Strawberry Dispenser"
+StrawberryDispenser.TextColor3 = Color3.new(0, 0, 0)
+StrawberryDispenser.TextScaled = true
+StrawberryDispenser.TextSize = 14
+StrawberryDispenser.TextWrapped = true
+
+SproutDispenser.Name = "SproutDispenser"
+SproutDispenser.Parent = LocationSF
+SproutDispenser.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+SproutDispenser.Position = UDim2.new(0.51910615, 0, 0.819843471, 0)
+SproutDispenser.Size = UDim2.new(0, 92, 0, 29)
+SproutDispenser.Font = Enum.Font.Cartoon
+SproutDispenser.Text = "Sprout Dispenser"
+SproutDispenser.TextColor3 = Color3.new(0, 0, 0)
+SproutDispenser.TextScaled = true
+SproutDispenser.TextSize = 14
+SproutDispenser.TextWrapped = true
+
+Honeystorm.Name = "Honeystorm"
+Honeystorm.Parent = LocationSF
+Honeystorm.BackgroundColor3 = Color3.new(1, 0.333333, 0)
+Honeystorm.Position = UDim2.new(0.51910615, 0, 0.775707304, 0)
+Honeystorm.Size = UDim2.new(0, 92, 0, 29)
+Honeystorm.Font = Enum.Font.Cartoon
+Honeystorm.Text = "Honey Storm"
+Honeystorm.TextColor3 = Color3.new(0, 0, 0)
+Honeystorm.TextScaled = true
+Honeystorm.TextSize = 14
+Honeystorm.TextWrapped = true
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(0.376471, 0.313726, 0.862745)
+Title.Position = UDim2.new(0.00336700329, 0, 0, 0)
+Title.Size = UDim2.new(0, 296, 0, 50)
+Title.Font = Enum.Font.Cartoon
+Title.Text = "Bee Swarm Simulator"
+Title.TextColor3 = Color3.new(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14
+Title.TextWrapped = true
+
+PollenFarm.Name = "Pollen Farm"
+PollenFarm.Parent = Frame
+PollenFarm.BackgroundColor3 = Color3.new(0.603922, 0, 0.603922)
+PollenFarm.BorderSizePixel = 3
+PollenFarm.Position = UDim2.new(0.282828242, 0, 0.694444478, 0)
+PollenFarm.Size = UDim2.new(0, 129, 0, 36)
+PollenFarm.Font = Enum.Font.Cartoon
+PollenFarm.Text = "Farm Pollen"
+PollenFarm.TextColor3 = Color3.new(0, 0, 0)
+PollenFarm.TextSize = 14
+
+Open.Name = "Open"
+Open.Parent = BeeS
+Open.BackgroundColor3 = Color3.new(0.00784314, 0.00392157, 0.988235)
+Open.BorderColor3 = Color3.new(0, 0, 0)
+Open.BorderSizePixel = 3
+Open.Position = UDim2.new(0.458333313, 0, 0.0100502511, 0)
+Open.Size = UDim2.new(0, 88, 0, 21)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open"
+Open.TextColor3 = Color3.new(0, 0, 0)
+Open.TextSize = 14
+
+Close.Name = "Close"
+Close.Parent = BeeS
+Close.BackgroundColor3 = Color3.new(0.992157, 0.996078, 0.0117647)
+Close.BorderColor3 = Color3.new(0, 0, 0)
+Close.BorderSizePixel = 3
+Close.Position = UDim2.new(0.458333313, 0, 0.0100502511, 0)
+Close.Size = UDim2.new(0, 88, 0, 21)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "Close"
+Close.TextColor3 = Color3.new(0, 0, 0)
+Close.TextSize = 14
+-- Scripts:
+
+
+Open.MouseButton1Click:connect(function()
+	Frame.Visible = true
+	Open.Visible = false
+	Close.Visible = true
+end)
+
+Close.MouseButton1Click:connect(function()
+	Frame.Visible = false
+	Open.Visible = true
+	Close.Visible = false
+end)
+
+FarmingSite.MouseButton1Click:connect(function()
+                if FarmingSite == true then
+                    FarmingSite = false
+                    FarmingSiteF.Visible = false
+                else
+                    FarmingSite = true
+                    FarmingSiteF.Visible = true
+                end
+        end)
+
+Locaiton.MouseButton1Click:connect(function()
+                if Locaiton == true then
+                    Locaiton = false
+                    LocationF.Visible = false
+                else
+                    Locaiton = true
+                    LocationF.Visible = true
+                end
+        end)
+
+Info.MouseButton1Click:connect(function()
+                if Info == true then
+                    Info = false
+                    Creditss.Visible = false
+                else
+                    Info = true
+                    Creditss.Visible = true
+                end
+        end)
+
+
+-- Pollen Farming --
+
+spawn (function()
+	while true do
+		wait(0.2)
+		if PollenFarmActive == true then
+			local player = game:GetService("Players").LocalPlayer
+			local currp
+			workspace.Collectibles.ChildAdded:Connect(function(part)
+				wait(0.3)
+				if currp and (part.Position-currp).magnitude < 100 then
+					player.Character:MoveTo(part.Position)
+					wait(0.1)
+					player.Character:MoveTo(currp)
+				end
+			end)
+			local pollenLbl = player.Character:FindFirstChild("ProgressLabel",true)
+			if not pollenLbl then
+				error("Backpack not found")
+			end
+			local maxpollen = tonumber(pollenLbl.Text:match("%d+$"))
+			local pollenTool = player.Character:FindFirstChildOfClass("Tool") or player.Backpack:FindFirstChildOfClass("Tool")
+			if pollenTool==nil or pollenTool:FindFirstChild("ClickEvent")==nil then
+				error("Tool not found")
+			end
+			print("Backpack size: " .. maxpollen)
+			if Field1AFActive == true then
+				fieldpos = {Vector3.new(-207.426,3,132.8),Vector3.new(-207.426,3,162.8),Vector3.new(-207.426,3,192.8)}
+				print("Farming Sunflower Zone")
+			elseif Field2AFActive == true then
+				fieldpos = {Vector3.new(-96.13, 3.35, 127.62),Vector3.new(-67.9, 3.35, 135.7)}
+				print("Farming Mushroom Zone")
+			elseif Field3AFActive == true then
+				fieldpos = {Vector3.new(-70.35,4,221.5),Vector3.new(-30.35,4,221.5),Vector3.new(10.35,4,221.5)}
+				print("Farming Dandelion Zone")
+			elseif Field4AFActive == true then
+				fieldpos = {Vector3.new(106.8,4,100.5),Vector3.new(146.8,4,100.5),Vector3.new(186.8,4,100.5)}
+				print("Farming Blue Flower Zone")
+			elseif Field5AFActive == true then
+				fieldpos = {Vector3.new(135,33,195),Vector3.new(160,33,175),Vector3.new(185,33,195)}
+				print("Farming Clover Zone")
+			elseif Field6AFActive == true then
+				fieldpos = {Vector3.new(-178,20,15),Vector3.new(-178,20,-12),Vector3.new(-157,20,-20)}
+				print("Farming StrawBerry Zone")
+			elseif Field7AFActive == true then
+				fieldpos = {Vector3.new(-67,20,0),Vector3.new(-42,20,-19),Vector3.new(-16.4,20,0)}
+				print("Farming Spider Zone")
+			elseif Field8AFActive == true then
+				fieldpos = {Vector3.new(92.9,20,-25.6),Vector3.new(132.9,20,-25.6),Vector3.new(172.9,20,-25.6)}
+				print("Farming BamBoo Zone")
+			elseif Field9AFActive == true then
+				fieldpos = {Vector3.new(-300,20,129),Vector3.new(-322.835,20,129),Vector3.new(-350,20,129)}
+				print("Farming Rose Zone")
+			elseif Field10AFActive == true then
+				fieldpos = {Vector3.new(-310.1,65.5,-128.1),Vector3.new(-310.1,65.5,-168.1),Vector3.new(-310.1,65.5,-208.1)}
+				print("Farming Pine Tree Zone")
+			elseif Field11AFActive == true then
+				fieldpos = {Vector3.new(-159.5,68,-101.5),Vector3.new(-194.5,68,-112.5),Vector3.new(-229.5,68,-101.5)}
+				print("Farming Cactus Zone")
+			elseif Field12AFActive == true then
+				fieldpos = {Vector3.new(-169,67,-183.8),Vector3.new(-186.5,67,-186.8),Vector3.new(-222,67,-183.8)}
+				print("Farming Pumpkin Zone")
+			elseif Field13AFActive == true then
+				fieldpos = {Vector3.new(285.3,70.2,-200),Vector3.new(260.3,70.2,-220),Vector3.new(225.3,70.2,-200)}
+				print("Farming Pineapple Patch")
+			elseif Field14AFActive == true then
+				fieldpos = {Vector3.new(55, 176, -195),Vector3.new(55, 176, -166),Vector3.new(55, 176, -140),Vector3.new(100, 176, -140),Vector3.new(100, 176, -166),Vector3.new(100, 176, -195)}
+				print("Farming Mountain Top Zone")
+			else
+				if maxpollen < 9999 then
+					fieldpos = {Vector3.new(-220,3.3,220),Vector3.new(-220,4,180),Vector3.new(-220,4,140),Vector3.new(-220,4,100),Vector3.new(-190,4,126),Vector3.new(-190, 4, 166),Vector3.new(-190, 4, 206)}
+					print("Auto Farming Zone 1 selected")
+				else
+					fieldpos = {Vector3.new(55, 176, -195),Vector3.new(55, 176, -166),Vector3.new(55, 176, -140),Vector3.new(100, 176, -140),Vector3.new(100, 176, -166),Vector3.new(100, 176, -195)}
+					print("Auto Farming Zone 2 selected")
+				end
+			end
+			local posIndex = 0
+			while PollenFarmActive do
+				--collect pollen
+				pollenTool.Parent = player.Character
+				wait(0.1)
+				while PollenFarmActive and player.leaderstats.Pollen.Value<maxpollen do
+					posIndex=posIndex+1
+					if posIndex>#fieldpos then posIndex=1 end
+					for rot=1,4 do
+						if not PollenFarmActive then break end
+						local angle = CFrame.Angles(0,math.pi*.5*rot,0)
+						currp = fieldpos[posIndex]+angle.lookVector*10
+						player.Character.HumanoidRootPart.CFrame=CFrame.new(currp)*angle
+						for i=1,25 do
+							if not PollenFarmActive then break end
+							wait(0.2)
+							pollenTool.ClickEvent:FireServer(currp)
+						end
+						if player.leaderstats.Pollen.Value+1>maxpollen then break end
+					end
+				end
+				--turn to honey
+				currp=nil
+				player.Character:MoveTo(player.SpawnPos.Value.p)
+				wait(1)
+				game:GetService("ReplicatedStorage").Events.PlayerHiveCommand:FireServer("ToggleHoneyMaking")
+				if PollenFarmActive then
+					repeat wait(0.5) until player.leaderstats.Pollen.Value < 1
+					wait(10)
+				end
+			end
+		end
+	end
+end)
+
+--- WayPoints ---
+
+local WayPoints = {
+["Black Bear"] = CFrame.new(-258.1, 5, 299.7),
+["Brown Bear"] = CFrame.new(282, 46, 236),
+["Panda Bear"] = CFrame.new(106.3, 35, 50.1),
+["Polar Bear"] = CFrame.new(-106, 119, -77),
+["Science Bear"] = CFrame.new(267, 103, 20),
+["Traveling Bear"] = CFrame.new(34, 14, 371),
+["Mother Bear"] = CFrame.new(-183.8, 4.6, 87.5),
+["Tunnel Bear"] = CFrame.new(507.3, 5.7, -45.7),
+["Sun Bear"] = CFrame.new(23.25, 14, 360.26),
+["Redfield Boost"] = CFrame.new(-332, 20, 244),
+["Bluefield Boost"] = CFrame.new(319, 58, 103),
+["MountainTop Boost"] = CFrame.new(-40, 176, -191.7),
+["Red Cannon (22)"] = CFrame.new(-240, 17, 345),
+["Blue Cannon (16)"] = CFrame.new(-287, 73, 22),
+["Yellow Cannon (12)"] = CFrame.new(266, 109, -25),
+["Slingshot (8)"] = CFrame.new(78, 23, 149),
+["Bee Shop"] = CFrame.new(-136.8, 4.6, 243.4),
+["Tool Shop"] = CFrame.new(86, 4.6, 294),
+["Tool Shop 2"] = CFrame.new(165, 69, -161),
+["MountainTop Shop"] = CFrame.new(-18, 176, -137),
+["Ticket Tent"] = CFrame.new(-234, 17, 398),
+["Red Clubhouse"] = CFrame.new(-334, 21, 216),
+["Blue Clubhouse"] = CFrame.new(292, 4, 98),
+["Ticket Shop"] = CFrame.new(-12.8, 184, -222.2),
+["Club Honey"] = CFrame.new(47, 5, 323),
+["RoyalJelly Shop"] = CFrame.new(-297, 53, 68),
+["Ticket RoyalJelly Shop"] = CFrame.new(81, 18, 240),
+["Honeystorm Dispensor"] = CFrame.new(301, 48, 191),
+["Blueberry Dispenser"] = CFrame.new(313.3, 58, 86.9),
+["Strawberry Dispenser"] = CFrame.new(-320.5, 46, 272.5),
+["Sprout Dispenser"] = CFrame.new(-269.26, 26.56, 267.31),
+["Instant Honey Convertor"] = CFrame.new(282, 68, -62),
+["King Beetles Lair"] = CFrame.new(218, 3, 140),
+["Clover Field"] = CFrame.new(174, 34, 189),
+["Mushroom Field"] = CFrame.new(-258.1, 5, 299.7),
+["Spider Field"] = CFrame.new(-57.2, 20, -5.3),
+["Blue Field"] = CFrame.new(113.7, 4, 101.5),
+["Sunflower Field"] = CFrame.new(-208, 4, 185),
+["StrawBerry Field"] = CFrame.new(-169.3, 20, -3.2),
+["Red Field"] = CFrame.new(-258.1, 5, 299.7),
+["Dandelion Field"] = CFrame.new(-30, 4, 225),
+["BamBoo Field"] = CFrame.new(93, 20, -25),
+["Rose Field"] = CFrame.new(-322, 20, 124),
+["Mushroom Field"] = CFrame.new(-94, 5, 116),
+["Cactus Field"] = CFrame.new(-194, 68, -107),
+["Pumpkin Field"] = CFrame.new(-194, 68, -182),
+["MountainTop Field"] = CFrame.new(76, 176, -181),
+["PineTree Field"] = CFrame.new(-318, 68, -150),
+["Pineapple Field"] = CFrame.new(262, 68, -201),
+["Onett"] = CFrame.new(-8.4, 234, -517.9),
+["Gumdrop Dispenser"] = CFrame.new(63, 20.7, 38.7),
+["Treat Dispenser"] = CFrame.new(193.9, 68, -123),
+["Treat Shop"] = CFrame.new(-228.2, 5, 89.4),
+["Ant Challenge"] = CFrame.new(90.6, 32.6, 501)
+}
+
+ReturntoHive.MouseButton1Down:connect(function()
+	local player = game:GetService("Players").LocalPlayer
+	player.Character:MoveTo(player.SpawnPos.Value.p)
+end)
+
+Honeystorm.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Honeystorm Dispensor"]
+end)
+
+BlackBear.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Black Bear"]
+end)
+
+BrownBear.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Brown Bear"]
+end)
+
+PandaBear.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Panda Bear"]
+end)
+
+PolarBear.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Polar Bear"]
+end)
+
+ScienceBear.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Science Bear"]
+end)
+
+TravelingBear.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Traveling Bear"]
+end)
+
+MotherBear.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Mother Bear"]
+end)
+
+TunnelBear.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Tunnel Bear"]
+end)
+
+RedBoost.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Redfield Boost"]
+end)
+
+BlueBoost.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Bluefield Boost"]
+end)
+
+MountainBoost.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["MountainTop Boost"]
+end)
+
+RedCannon.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Red Cannon (22)"]
+end)
+
+BlueCannon.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Blue Cannon (16)"]
+end)
+
+YellowCannon.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Yellow Cannon (12)"]
+end)
+
+Slingshot.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Slingshot (8)"]
+end)
+
+BeeShop.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Bee Shop"]
+end)
+
+BasicToolsShop.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Tool Shop"]
+end)
+
+AdvancedToolsShop.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Tool Shop 2"]
+end)
+
+MountainTopShop.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["MountainTop Shop"]
+end)
+
+TentShop.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Ticket Tent"]
+end)
+
+RedClubhouse.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Red Clubhouse"]
+end)
+
+BlueClubhouse.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Blue Clubhouse"]
+end)
+
+TicketShop.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Ticket Shop"]
+end)
+
+ClubHoney.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Club Honey"]
+end)
+
+RoyalJellyShop.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["RoyalJelly Shop"]
+end)
+
+TicketRoyalJelly.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Ticket RoyalJelly Shop"]
+end)
+
+Honeystorm.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Honeystorm Dispensor"]
+end)
+
+HoneyConvertor.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Instant Honey Convertor"]
+end)
+
+KingbeetlesLair.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["King Beetles Lair"]
+end)
+
+
+MushRoomField.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Mushroom Field"]
+end)
+
+StrawBerryField.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["StrawBerry Field"]
+end)
+
+CloverField.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Clover Field"]
+end)
+
+SpiderField.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Spider Field"]
+end)
+
+BlueField.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Blue Field"]
+end)
+
+SunflowerField.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Sunflower Field"]
+end)
+
+DandelionField.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Dandelion Field"]
+end)
+
+BamBooField.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["BamBoo Field"]
+end)
+
+RoseField.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Rose Field"]
+end)
+
+CactusField.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Cactus Field"]
+end)
+
+PumpkinField.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Pumpkin Field"]
+end)
+
+PineTreeField.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["PineTree Field"]
+end)
+
+MountainTopField.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["MountainTop Field"]
+end)
+
+PineappleField.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Pineapple Field"]
+end)
+
+GumdropDispenser.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Gumdrop Dispenser"]
+end)
+
+TreatShop.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Treat Shop"]
+end)
+
+Onett.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Onett"]
+end)
+
+AntChallenge.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Ant Challenge"]
+end)
+
+BlueberryDispenser.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Blueberry Dispenser"]
+end)
+
+StrawberryDispenser.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Strawberry Dispenser"]
+end)
+
+TreatDispenser.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Treat Shop"]
+end)
+
+SproutDispenser.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Sprout Dispenser"]
+end)
+
+-- Find Hidden Treasures --
+
+CollectallTreasures.MouseButton1Down:connect(function()
+	local player = game:GetService("Players").LocalPlayer
+	local function collecttreasure(treasure)
+		for i,v in ipairs(treasure:GetChildren()) do
+			if v.Parent then
+				player.Character:MoveTo(v.Position)
+			end
+		wait(1)
+		end
+	end
+	collecttreasure(workspace.TreasureCollectibles)
+	wait(1)
+	player.Character:MoveTo(player.SpawnPos.Value.p)
+end)
+
+--- Pollen Farm ---
+
+PollenFarm.MouseButton1Click:connect(function()
+	if PollenFarmActive ~= true then
+		PollenFarmActive = true
+		Field1AFActive = false
+		Field2AFActive = false
+		Field3AFActive = false
+		Field4AFActive = false
+		Field5AFActive = false
+		Field6AFActive = false
+		Field7AFActive = false
+		Field8AFActive = false
+		Field9AFActive = false
+		Field10AFActive = false
+		Field11AFActive = false
+		Field12AFActive = false
+		Field13AFActive = false
+		Field14AFActive = false
+		notify'Pollen Farming Started'
+		else
+		PollenFarmActive = false
+		Field1AFActive = false
+		Field2AFActive = false
+		Field3AFActive = false
+		Field4AFActive = false
+		Field5AFActive = false
+		Field6AFActive = false
+		Field7AFActive = false
+		Field8AFActive = false
+		Field9AFActive = false
+		Field10AFActive = false
+		Field11AFActive = false
+		Field12AFActive = false
+		Field13AFActive = false
+		Field14AFActive = false
+		notify'Pollen Farming Ended'
+		local player = game:GetService("Players").LocalPlayer
+		currp=nil
+		player.Character:MoveTo(player.SpawnPos.Value.p)
+	end
+end)
+
+Field1AF.MouseButton1Down:connect(function()
+	PollenFarmActive = true
+	Field1AFActive = true
+	Field2AFActive = false
+	Field3AFActive = false
+	Field4AFActive = false
+	Field5AFActive = false
+	Field6AFActive = false
+	Field7AFActive = false
+	Field8AFActive = false
+	Field9AFActive = false
+	Field10AFActive = false
+	Field11AFActive = false
+	Field12AFActive = false
+	Field13AFActive = false
+	Field14AFActive = false
+	notify'Pollen Farming Zone 1 Started'
+end)
+
+Field2AF.MouseButton1Down:connect(function()
+	PollenFarmActive = true
+	Field2AFActive = true
+	Field1AFActive = false
+	Field3AFActive = false
+	Field4AFActive = false
+	Field5AFActive = false
+	Field6AFActive = false
+	Field7AFActive = false
+	Field8AFActive = false
+	Field9AFActive = false
+	Field10AFActive = false
+	Field11AFActive = false
+	Field12AFActive = false
+	Field13AFActive = false
+	Field14AFActive = false
+	notify'Pollen Farming Zone 2 Started'
+end)
+
+Field3AF.MouseButton1Down:connect(function()
+	PollenFarmActive = true
+	Field3AFActive = true
+	Field1AFActive = false
+	Field2AFActive = false
+	Field4AFActive = false
+	Field5AFActive = false
+	Field6AFActive = false
+	Field7AFActive = false
+	Field8AFActive = false
+	Field9AFActive = false
+	Field10AFActive = false
+	Field11AFActive = false
+	Field12AFActive = false
+	Field13AFActive = false
+	Field14AFActive = false
+	notify'Pollen Farming Zone 3 Started'
+end)
+
+Field4AF.MouseButton1Down:connect(function()
+	PollenFarmActive = true
+	Field4AFActive = true
+	Field1AFActive = false
+	Field2AFActive = false
+	Field3AFActive = false
+	Field5AFActive = false
+	Field6AFActive = false
+	Field7AFActive = false
+	Field8AFActive = false
+	Field9AFActive = false
+	Field10AFActive = false
+	Field11AFActive = false
+	Field12AFActive = false
+	Field13AFActive = false
+	Field14AFActive = false
+	notify'Pollen Farming Zone 4 Started'
+end)
+
+Field5AF.MouseButton1Down:connect(function()
+	PollenFarmActive = true
+	Field5AFActive = true
+	Field1AFActive = false
+	Field2AFActive = false
+	Field3AFActive = false
+	Field4AFActive = false
+	Field6AFActive = false
+	Field7AFActive = false
+	Field8AFActive = false
+	Field9AFActive = false
+	Field10AFActive = false
+	Field11AFActive = false
+	Field12AFActive = false
+	Field13AFActive = false
+	Field14AFActive = false
+	notify'Pollen Farming Zone 5 Started'
+end)
+
+Field6AF.MouseButton1Down:connect(function()
+	PollenFarmActive = true
+	Field6AFActive = true
+	Field1AFActive = false
+	Field2AFActive = false
+	Field3AFActive = false
+	Field4AFActive = false
+	Field5AFActive = false
+	Field7AFActive = false
+	Field8AFActive = false
+	Field9AFActive = false
+	Field10AFActive = false
+	Field11AFActive = false
+	Field12AFActive = false
+	Field13AFActive = false
+	Field14AFActive = false
+	notify'Pollen Farming Zone 6 Started'
+end)
+
+Field7AF.MouseButton1Down:connect(function()
+	PollenFarmActive = true
+	Field7AFActive = true
+	Field1AFActive = false
+	Field2AFActive = false
+	Field3AFActive = false
+	Field4AFActive = false
+	Field5AFActive = false
+	Field6AFActive = false
+	Field8AFActive = false
+	Field9AFActive = false
+	Field10AFActive = false
+	Field11AFActive = false
+	Field12AFActive = false
+	Field13AFActive = false
+	Field14AFActive = false
+	notify'Pollen Farming Zone 7 Started'
+end)
+
+Field8AF.MouseButton1Down:connect(function()
+	PollenFarmActive = true
+	Field8AFActive = true
+	Field1AFActive = false
+	Field2AFActive = false
+	Field3AFActive = false
+	Field4AFActive = false
+	Field5AFActive = false
+	Field6AFActive = false
+	Field7AFActive = false
+	Field9AFActive = false
+	Field10AFActive = false
+	Field11AFActive = false
+	Field12AFActive = false
+	Field13AFActive = false
+	Field14AFActive = false
+	notify'Pollen Farming Zone 8 Started'
+end)
+
+Field9AF.MouseButton1Down:connect(function()
+	PollenFarmActive = true
+	Field9AFActive = true
+	Field1AFActive = false
+	Field2AFActive = false
+	Field3AFActive = false
+	Field4AFActive = false
+	Field5AFActive = false
+	Field6AFActive = false
+	Field7AFActive = false
+	Field8AFActive = false
+	Field10AFActive = false
+	Field11AFActive = false
+	Field12AFActive = false
+	Field13AFActive = false
+	Field14AFActive = false
+	notify'Pollen Farming Zone 9 Started'
+end)
+
+Field10AF.MouseButton1Down:connect(function()
+	PollenFarmActive = true
+	Field10AFActive = true
+	Field1AFActive = false
+	Field2AFActive = false
+	Field3AFActive = false
+	Field4AFActive = false
+	Field5AFActive = false
+	Field6AFActive = false
+	Field7AFActive = false
+	Field8AFActive = false
+	Field9AFActive = false
+	Field11AFActive = false
+	Field12AFActive = false
+	Field13AFActive = false
+	Field14AFActive = false
+	notify'Pollen Farming Zone 10 Started'
+end)
+
+Field11AF.MouseButton1Down:connect(function()
+	PollenFarmActive = true
+	Field11AFActive = true
+	Field1AFActive = false
+	Field2AFActive = false
+	Field3AFActive = false
+	Field4AFActive = false
+	Field5AFActive = false
+	Field6AFActive = false
+	Field7AFActive = false
+	Field8AFActive = false
+	Field9AFActive = false
+	Field10AFActive = false
+	Field12AFActive = false
+	Field13AFActive = false
+	Field14AFActive = false
+	notify'Pollen Farming Zone 11 Started'
+end)
+
+Field12AF.MouseButton1Down:connect(function()
+	PollenFarmActive = true
+	Field12AFActive = true
+	Field1AFActive = false
+	Field2AFActive = false
+	Field3AFActive = false
+	Field4AFActive = false
+	Field5AFActive = false
+	Field6AFActive = false
+	Field7AFActive = false
+	Field8AFActive = false
+	Field9AFActive = false
+	Field10AFActive = false
+	Field11AFActive = false
+	Field13AFActive = false
+	Field14AFActive = false
+	notify'Pollen Farming Zone 12 Started'
+end)
+
+Field13AF.MouseButton1Down:connect(function()
+	PollenFarmActive = true
+	Field13AFActive = true
+	Field1AFActive = false
+	Field2AFActive = false
+	Field3AFActive = false
+	Field4AFActive = false
+	Field5AFActive = false
+	Field6AFActive = false
+	Field7AFActive = false
+	Field8AFActive = false
+	Field9AFActive = false
+	Field10AFActive = false
+	Field11AFActive = false
+	Field12AFActive = false
+	Field14AFActive = false
+	notify'Pollen Farming Zone 13 Started'
+end)
+
+Field14AF.MouseButton1Down:connect(function()
+	PollenFarmActive = true
+	Field14AFActive = true
+	Field1AFActive = false
+	Field2AFActive = false
+	Field3AFActive = false
+	Field4AFActive = false
+	Field5AFActive = false
+	Field6AFActive = false
+	Field7AFActive = false
+	Field8AFActive = false
+	Field9AFActive = false
+	Field10AFActive = false
+	Field11AFActive = false
+	Field12AFActive = false
+	Field13AFActive = false
+	notify'Pollen Farming Zone 14 Started'
+end)
+-- Auto Dig --
+
+AutoDig.MouseButton1Click:connect(function()
+	if AutoDigActive ~= true then
+		AutoDigActive = true
+		if AutoDigActive then
+			local player = game:GetService("Players").LocalPlayer
+			local pollenTool = player.Character:FindFirstChildOfClass("Tool") or player.Backpack:FindFirstChildOfClass("Tool")
+			if pollenTool==nil or pollenTool:FindFirstChild("ClickEvent")==nil then
+			AutoDigActive = false
+			AutoDig.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+			error("Tool not found")
+			end
+			pollenTool.Parent = player.Character
+			while AutoDigActive do
+				wait(0.1)
+				pollenTool.ClickEvent:FireServer(CFrame.new())
+			end
+		end
+	else
+		AutoDigActive = false
+	end
+end)
+
+--- Mouse Actions ---
+
+mouse.KeyDown:connect(function(key)
+	if key == "r" then
+		if antchallengeescape == true then
+			antchallengeescape = false
+		else
+			LocationX = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.x
+			LocationY = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.y
+			LocationZ = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.z
+			NewLocationY = LocationY +10
+			print("Current Position: "..LocationX..", "..LocationY..", "..LocationZ)
+			antchallengeescape = true
+		end
+	end
+end)
+
+GetAnyBees.MouseButton1Click:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/2N8DFMWi", true))()
+end)

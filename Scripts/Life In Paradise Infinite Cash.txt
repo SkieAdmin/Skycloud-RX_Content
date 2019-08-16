@@ -1,0 +1,6 @@
+local remote = Game["ReplicatedStorage"]["Car"]
+local args = {
+   [1] = "Vehicle1",
+   [2] = -599999999 --[[number]]
+}
+remote:FireServer(unpack(args))
